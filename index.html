@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sri Lankan Endemic Birds</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        /* background-color: #f4f4f4; */
+        margin: 0;
+        padding: 0;
+        background: white;
+      }
+
+      header {
+        background-color: #065208;
+        color: gold;
+        text-align: center;
+        padding: 15px 0;
+      }
+
+      .ul-navbar-nav {
+        text-align: left;
+      }
+
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .card {
+        border: 1px solid #ddd;
+        margin: 15px;
+        padding: 10px;
+        width: 220px;
+        text-align: center;
+        background-color: white;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .card img {
+        width: 95%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #065208;
+        color: rgb(255, 255, 255);
+      }
+
+      .card {
+        position: relative;
+        perspective: 800px;
+        transition: transform 1s ease;
+        perspective: 1000px;
+      }
+
+      .card > * {
+        width: 10rem;
+        transition: transform 1s ease;
+        backface-visibility: hidden;
+      }
+
+      .card:hover > .card__front {
+        transform: rotateY(180deg);
+      }
+
+      .card:hover > .card__back {
+        transform: rotateY(0);
+      }
+
+      .footer-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .footer-left,
+      .footer-center,
+      .footer-right {
+        flex: 1;
+        padding: 20px;
+      }
+
+      .footer-left img {
+        max-width: 100px;
+      }
+
+      .footer-right input {
+        width: 80%;
+        padding: 8px;
+        margin: 10px 0;
+      }
+
+      .footer-right button {
+        background: gold;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+
+      .social-icons img {
+        width: 30px;
+        margin: 5px;
+      }
+
+      .navbar-nav {
+        margin-right: 550px;
+        gap: 500px;
+      }
+
+      .navbar-nav .nav-link {
+        color: #eae5e2 !important;
+        column-gap: 200px;
+        font-weight: bold;
+
+        margin-left: 5px;
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: #29bd15 !important;
+      }
+
+      .header {
+        background-color: #004d00;
+        color: #ffcc00 !important;
+        text-align: center;
+        padding: 20px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <section id="Home">
+        <h1>Endemic Birds in Sri Lanka</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+            <div
+              class="collapse navbar-collapse justify-content-right"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <a class="nav-link" href="#Home">Home</a>
+                <a class="nav-link" href="#About us">About us</a>
+                <a class="nav-link" href="#Birds">Birds</a>
+                <a class="nav-link" href="#Conservation">Conservation</a>
+                <a class="nav-link" href="#News & Articles">News & Articles</a>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+
+    <section id="Birds">
+      <div class="card-container">
+        <div class="card">
+          <a href="/pages/ceylon-Small-Barbet.html">
+            <img
+              src="https://www.srilankansafari.com/images/birds-of-sri-lanka/sri-lanka-small-barbet/sri-lanka-small-barbet03.jpg"
+              alt="Bird 1"
+            />
+            <h3>Ceylon Small Barbet</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="/pages/red-faced-malkoha.html ">
+            <img
+              src="https://alchetron.com/cdn/red-faced-malkoha-fac0134f-2a23-41be-b129-cf45c9d89d8-resize-750.jpeg"
+              alt="Bird 2"
+            />
+            <h3>red faced malkoha</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="/pages/Ceylon-Spurfowl.html">
+            <img
+              src="https://cdn.download.ams.birds.cornell.edu/api/v1/asset/545194211/1200"
+            />
+            <h3>Ceylon Spurfowl</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="/pages/Ceylon-Woodpigeon.html">
+            <img
+              src="https://www.srilankabirdwatchingtours.com/images/birds-of-sri-lanka/sri-lanka-wood-pigeon/sri-lanka-wood-pigeon1.jpg"
+            />
+            <h3>Ceylon Woodpigeon</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="/pages/Ceylon-Hill-Myna.html">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Zq7fXEajEzyD_-wCDV-4Ptwd9Um_jBNzCw&s "
+            />
+            <h3>Ceylon Hill-Myna</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="/pages/Ceylon-Crested-Drongo.html">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Dicrurus_lophorinus_63119961.jpg/640px-Dicrurus_lophorinus_63119961.jpg"
+            />
+            <h3>Ceylon Crested Drongo</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="/pages/Ceylon-White-eye.html">
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9fQNKLGjy03JDxa7y9RRCJrFbV5digeIgVywcHfAKuLyqt1XKG3VlyyMh-86MReQm_48vbaSCHZfKwupdypCrcHEUb8JpGShhmLC_Itpfgo5wErH1dQ3Dsh0m1MzWuko02S255qYYpT-U/s1600/7.jpg"
+            />
+            <h3>Ceylon White eye</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="pages/Legge’s-Flowerpecker.html">
+            <img
+              src="https://www.srilankansafari.com/images/birds-of-sri-lanka/legges-flower-pecker/legges-flower-pecker03.jpg"
+            />
+            <h3>Legge’s Flowerpecker</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="pages/Ashy-headed-Laughing-Thrush.html">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/8W0A7974.jpg/220px-8W0A7974.jpg"
+            />
+            <h3>Ashy-headed Laughing Thrush</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="pages/Ceylon-Rufous-Babbler.html">
+            <img
+              src="https://www.srilankabirdwatchingtours.com/images/birds-of-sri-lanka/sri-lanka-rufous-babbler/sri-lanka-rufous-babbler6.jpg"
+            />
+            <h3>Ceylon Rufous Babbler</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="pages/Ceylon-Scimitar-Babbler.html">
+            <img src="https://www.lakpura.com/images/LK94009293-02-E.JPG" />
+            <h3>Ceylon Scimitar-Babbler</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="pages/Brown-capped-Babbler.html">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Pellorneum_fuscocapillus_325087695_%28cropped%29.jpg/640px-Pellorneum_fuscocapillus_325087695_%28cropped%29.jpg"
+            />
+            <h3>Brown-capped Babbler</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="pages/Dusky-blue-Flycatcher.html">
+            <img
+              src="https://adventurebirding.lk/wp-content/uploads/2016/02/Dusky-blue-flycatcher.jpg"
+            />
+            <h3>Dusky-blue Flycatcher</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="pages/Ceylon-Bush-Warbler.html">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Flickr_-_Rainbirder_-_Ceylon_bush_warbler_%28Bradypterus_palliseri%29_%28cropped%29.jpg/220px-Flickr_-_Rainbirder_-_Ceylon_bush_warbler_%28Bradypterus_palliseri%29_%28cropped%29.jpg"
+            />
+            <h3>Ceylon Bush-Warbler</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="pages/Ceylon-Scaly-Thrush.html">
+            <img
+              src="https://df4gcsff7xjx7.cloudfront.net/2018/09/Ceylon-Scaly-Thrush-2.jpg"
+            />
+            <h3>Ceylon Scaly Thrush</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="pages/Spot-winged-Ground-Thrush.html">
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh43L7_d0ch7YCpEN7RQFEfSvNfP5MnJDdDXfXvmP8oky7-q20QhpooqgqkuapJawZIAFm95QFYmkJOvwUevh7waaOO2dyjrNLn00tJBR7ltymBPALxC0TCLgipohcF1_a-4jLd9tcN03LD/s1600/1.jpg"
+            />
+            <h3>Spot-winged Ground-Thrush</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="pages/Ceylon-Whistling-Thrush.html">
+            <img
+              src="https://www.srilankabirdwatchingtours.com/images/birds-of-sri-lanka/sri-lanka-whistling-thrush/sri-lanka-whistling-thrush2.jpg"
+            />
+            <h3>Ceylon Whistling Thrush</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="pages/Yellow-eared-Bulbul.html">
+            <img src="https://www.lakpura.com/images/LK94009300-06-E.JPG" />
+            <h3>Yellow eared Bulbul</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="pages/Ceylon-Swallow.html">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Red-rumped_Swallow_%28Cecropis_daurica%29_Photograph_by_Shantanu_Kuveskar.jpg"
+            />
+            <h3>Ceylon Swallow</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="pages/Crimson-backed-Flameback.html">
+            <img
+              src="https://live.staticflickr.com/7153/6504009667_74e003dc73_z.jpg"
+            />
+            <h3>Crimson backed Flameback</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="pages/ceylon-Green-pigeon.html">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdleld3myAfKdfziOb0iKYQGTgcfy3HbBhcg&s"
+            />
+            <h3>ceylon Green-pigeon</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="About us">
+      <i
+        ><h2 style="color: #15660b">
+          About Us – Endemic Birds of Sri Lanka
+        </h2></i
+      >
+      <p>
+        Sri Lanka is home to a remarkable variety of endemic bird species, found
+        nowhere else in the world. Our mission is to educate, inspire, and raise
+        awareness about these unique birds and their conservation.
+      </p>
+      <h4>Our Vision</h4>
+      <p>
+        To promote the protection and appreciation of Sri Lanka’s endemic birds
+        by providing valuable information and resources.
+      </p>
+      <h4>What We Offer</h4>
+      <ul>
+        <li>
+          A detailed list of Sri Lanka’s endemic birds with descriptions and
+          images.
+        </li>
+        <li>
+          Information on habitats, conservation efforts, and threats they face.
+        </li>
+        <li>
+          A collection of news, articles, and events related to birdwatching and
+          conservation.
+        </li>
+      </ul>
+      <h4>Why It Matters</h4>
+      <p>
+        With increasing deforestation and habitat loss, Sri Lanka’s endemic
+        birds face numerous challenges. Understanding these species and their
+        importance is the first step toward their protection. For more
+        information, follow us on social media or reach out via email at
+        info@endemicbirds.lk. Let’s work together to preserve Sri Lanka’s
+        natural heritage!
+      </p>
+    </section>
+    <br />
+    <section id="Conservation">
+      <i><h2 style="color: #15660b">Endemic Bird Conservation</h2></i>
+      <div class="content">
+        <b>
+          <p class="section-title">1.Threats</p>
+          <p>Endemic birds face several major threats:</p>
+          <ul>
+            <li>
+              <span class="important">Deforestation</span> – Loss of natural
+              habitats
+            </li>
+            <li>
+              <span class="important">Climate Change</span> – Rising
+              temperatures and altered rainfall patterns
+            </li>
+            <li>
+              <span class="important">Poaching & Illegal Trade</span> – Hunting
+              and smuggling of rare species
+            </li>
+            <li>
+              <span class="important">Pollution</span> – Air, water, and waste
+              pollution affecting ecosystems
+            </li>
+            <li>
+              <span class="important">Invasive Species</span> – Non-native
+              animals and plants competing with endemic species
+            </li>
+          </ul>
+          <p class="section-title">2.Protected Areas</p>
+          <p>Key protected areas where endemic birds are conserved:</p>
+          <ul>
+            <li>National Parks</li>
+            <li>Wildlife Sanctuaries</li>
+            <li>Forest Reserves</li>
+            <li>Wetlands and Bird Sanctuaries</li>
+          </ul>
+          <p class="section-title">3. How to Help?</p>
+          <p>Ways to contribute to conservation efforts:</p>
+          <ul>
+            <li>
+              <span class="important">Support Conservation Organizations</span>
+              – Donate or volunteer
+            </li>
+            <li>
+              <span class="important">Spread Awareness</span> – Educate others
+              about endemic bird protection
+            </li>
+            <li>
+              <span class="important">Practice Eco-friendly Habits</span> –
+              Reduce pollution and protect natural habitats
+            </li>
+            <li>
+              <span class="important"
+                >Participate in Bird Watching & Citizen Science</span
+              >
+              – Report bird sightings and data
+            </li>
+            <li>
+              <span class="important">Follow Responsible Tourism</span> – Avoid
+              disturbing bird habitats
+            </li>
+          </ul>
+        </b>
+      </div>
+    </section>
+    <br />
+    <section id="News & Articles">
+      <i><h2 style="color: #15660b">News & Articles</h2></i>
+      <div class="card-container">
+        <div class="card">
+          <img
+            src="https://evolution.cmb.ac.lk/wp-content/uploads/2019/10/62215488_475282306346877_6850259935591137280_o.jpg"
+          />
+          <h3>MAWBIMA</h3>
+        </div>
+        <div class="card">
+          <img src="/image/thethbim.jpg" />
+          <h3>MAWBIMA</h3>
+        </div>
+        <div class="card">
+          <img src="/image/atuwahi.jpg" />
+          <h3>DINAMINA</h3>
+        </div>
+        <div class="card">
+          <img src="/image/red.jpg" />
+          <h3>LANKADEEPA</h3>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/5c94ab21a09a7e443410d831/1597300509038-A8ORH2JNTDD3IGPBJLBM/ayu-in-the-wild+-sri-lanka-bird-watching-magazine-uk?format=1500w "
+          />
+          <h3>MAWBIMA</h3>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <img
+            src="/image/hd-twitter-bird-silver-metal-circles-logo-icon-png-701751694781796dz4st6huzw-removebg-preview.png"
+            alt="Nature Odyssey Logo"
+            class="logo"
+            width="100px"
+            height="100px"
+          />
+          <p>All copyrights reserved by Ahasna Charumee - © 2025</p>
+        </div>
+        <div class="footer-center">
+          <h3>NATURE AHAS LTD</h3>
+          <p>First Lane,Welipitiya<br />Weligama, Sri Lanka</p>
+          <p>+94 7726 90 531</p>
+          <p>ahasnacharumee@gmail.com</p>
+        </div>
+        <div class="footer-right">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"
+              ><img src="/image/icons8-twitter-50.png" alt="twitter"
+            /></a>
+            <a href="#"
+              ><img src="/image/icons8-instagram-logo-50.png" alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img src="image/icons8-facebook-50.png" alt="facebok"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
