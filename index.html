@@ -5,6 +5,278 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sri Lankan Endemic Birds</title>
     <link rel="styleSheet" href="/css/index.css" />
+    <style>
+      body {
+  font-family: Arial, sans-serif;
+  /* background-color: #f4f4f4; */
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #065208;
+  color: gold;
+  text-align: center;
+  padding: 15px 0;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+
+.ul-navbar-nav {
+  text-align: left;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 60px; 
+  padding: 205px;
+  justify-items: center;
+}
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr); 
+
+}
+
+.card {
+  border: 1px solid #ddd;
+  margin: 15px;
+  padding: 10px;
+  width: 100%; 
+  max-width: 300px;  text-align: center;
+  height: 350px;
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  
+}
+.news {
+  border: 1px solid #ddd;
+  color: #f9f9f9;
+  margin: 30px;
+  padding: 10px;
+  width: 350px;
+  text-align: center;
+  background-color: rgb(72, 156, 59);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.news:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 287px;
+  object-fit: cover;
+}
+.news img {
+  width: 350px;
+  height: 250px;
+  object-fit: fill;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #065208;
+  color: rgb(255, 255, 255);
+}
+
+.card {
+  position: relative;
+  perspective: 800px;
+  transition: transform 1s ease;
+  perspective: 1000px;
+}
+
+.card > * {
+  width: 10rem;
+  transition: transform 1s ease;
+  backface-visibility: hidden;
+  text-decoration: none;
+}
+
+.card:hover > .card__front {
+  transform: rotateY(180deg);
+}
+
+.card:hover > .card__back {
+  transform: rotateY(0);
+  text-decoration: none;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-left img {
+  max-width: 100px;
+}
+
+.footer-right input {
+  width: 80%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.footer-right button {
+  background: gold;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 5px;
+}
+
+.navbar-nav {
+  margin-right: 900px;
+  text-decoration: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-nav .nav-link {
+  color: #eae5e2 !important;
+  font-weight: bold;
+  gap: 20;
+  text-decoration: none;
+
+}
+
+.navbar-nav .nav-link:hover {
+  color: #29bd15 !important;
+  text-decoration: none;
+}
+
+.header {
+  background-color: #004d00;
+  color: #ffcc00 !important;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+#About\ us {
+  margin: 40px auto;  /* Adds space above and below the section */
+  padding: 20px;
+  background-color: #f9f9f9;  /* Light background color for contrast */
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Soft shadow for visual depth */
+  max-width: 900px;  /* Limits the width of the section */
+}
+
+#About\ us h2 {
+  color: #15660b;
+  text-align: center;  /* Centers the heading */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#About\ us h4 {
+  color: #065208;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+#About\ us p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+#About\ us ul {
+  list-style-type: disc;
+  margin-left: 40px;
+  font-size: 1rem;
+}
+
+#About\ us ul li {
+  margin-bottom: 10px;
+}
+#Conservation {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+}
+
+#Conservation h2 {
+  color: #15660b;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#Conservation .content {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+#Conservation .section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #065208;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+#Conservation ul {
+  list-style-type: disc;
+  margin-left: 40px;
+  font-size: 1rem;
+}
+
+#Conservation ul li {
+  margin-bottom: 10px;
+}
+
+#Conservation ul .important {
+  font-weight: bold;
+  color: #d9534f;
+}
+.center-heading {
+  text-align: center;
+}
+
+    </style>
   </head>
   <body>
     <header>
@@ -17,9 +289,8 @@
               id="navbarNav"
             >
               <ul class="navbar-nav">
-                <a class="nav-link" href="#Home">Home</a>
+                <a class="nav-link" href="#home">Home</a>
                 <a class="nav-link" href="#About us">About</a>
-                <a class="nav-link" href="#Birds">Birds</a>
                 <a class="nav-link" href="#Conservation">Conservation</a>
                 <a class="nav-link" href="#News & Articles">News & Articles</a>
               </ul>
@@ -29,7 +300,7 @@
       </section>
     </header>
 
-    <section id="Birds">
+    <section id="home">
       <div class="card-container">
         <div class="card">
           <a href="/pages/ceylon-Small-Barbet.html">
@@ -307,7 +578,7 @@
     </section>
     <br />
     <section id="News & Articles">
-      <i><h2 style="color: #15660b">News & Articles</h2></i>
+      <i><h2  class="center-heading" style="color: #15660b">News & Articles</h2></i>
       <div class="news-container">
         <div class="news">
           <img src="/image/thethbim.jpg" />
@@ -341,9 +612,15 @@
         </div>
         <div class="news">
           <img
-            src="https://evolution.cmb.ac.lk/wp-content/uploads/2019/10/62215488_475282306346877_6850259935591137280_o.jpg"
+            src="https://z-p3-scontent.fcmb9-1.fna.fbcdn.net/v/t39.30808-6/473740652_1010474691109870_4730993718035214112_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ZAPtbSVgTc0Q7kNvgGTAr-9&_nc_oc=AdgbaHH9nNjO6nHTVhMJyyk42VFYx1pcSnO3ykoXBQn2PIBYF16bLTjmxBzZCXKJalE&_nc_zt=23&_nc_ht=z-p3-scontent.fcmb9-1.fna&_nc_gid=AbdYmM0Co3hKwjtJqWqJ2Mq&oh=00_AYBc873LKgKrL3XtxwBrbI9bQ5-Dt77Tk_InisXFV2umew&oe=67BC02AF"
           />
-          <h3>MAWBIMA</h3>
+          <h3>DAILY MIRROR</h3>
+        </div>
+        <div class="news">
+          <img
+            src="/image/image.png"
+          />
+          <h3>DAILY MIRROR</h3>
         </div>
       </div>
     </section>
