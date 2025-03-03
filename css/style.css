@@ -1,8 +1,184 @@
-
-  img {
+.bird {
    
-    object-fit: cover;
-    object-fit: fill;
-    float: left;
-    margin-right: 10px;
-  }
+  object-fit: cover;
+  object-fit: fill;
+  float: left;
+  margin-right: 10px;
+  margin-left:10px;
+  margin-top:15px
+}
+p{
+  font-size: 20px;
+  margin-right: 10px;
+  margin-left:10px;
+  
+ 
+}
+h1{
+ font-size: 40px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  z-index: 1000;
+  background-image: url(/image/ricardo-porto-1oOv4stIKB4-unsplash.jpg
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+
+}
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 331px;
+}
+.center-heading {
+  text-align: center;
+}
+
+.navbar-nav {
+  margin-left: 900px;
+  text-decoration: none;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color:gold;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color:gold !important;
+}
+
+.navbar-nav .nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.ul-navbar-nav {
+  text-align: left;
+}
+#burger {
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none;
+}
+.menu-panel {
+  background-color: black;
+  color: white;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: right 0.5s ease-in-out;
+}
+.menu-panel ul {
+  list-style: none;
+  padding: 50px 20px;
+}
+.menu-panel ul li {
+  margin-bottom: 16px;
+}
+.menu-panel ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+.close-btn {
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+#Birdi{
+  margin-top: 10%;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  background-image: url(/image/ricardo-porto-1oOv4stIKB4-unsplash.jpg
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-left img {
+  max-width: 100px;
+}
+
+.footer-right input {
+  width: 80%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.footer-right button {
+  background: gold;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 5px;
+}

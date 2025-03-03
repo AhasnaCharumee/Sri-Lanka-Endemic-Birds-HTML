@@ -5,283 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sri Lankan Endemic Birds</title>
     <link rel="styleSheet" href="/css/index.css" />
-    <style>
-      body {
-  font-family: Arial, sans-serif;
-  /* background-color: #f4f4f4; */
-  margin: 0;
-  padding: 0;
-  background: white;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #065208;
-  color: gold;
-  text-align: center;
-  padding: 15px 0;
-  z-index: 1000; /* Ensure it's above other elements */
-}
-
-
-.ul-navbar-nav {
-  text-align: left;
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 60px; 
-  padding: 205px;
-  justify-items: center;
-}
-.news-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
-  display: grid;
-
-  grid-template-columns: repeat(3, 1fr); 
-
-}
-
-.card {
-  border: 1px solid #ddd;
-  margin: 15px;
-  padding: 10px;
-  width: 100%; 
-  max-width: 300px;  text-align: center;
-  height: 350px;
-  background-color: white;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  
-}
-.news {
-  border: 1px solid #ddd;
-  color: #f9f9f9;
-  margin: 30px;
-  padding: 10px;
-  width: 350px;
-  text-align: center;
-  background-color: rgb(72, 156, 59);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-}
-.news:hover {
-  transform: scale(1.05);
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.card img {
-  width: 100%;
-  height: 287px;
-  object-fit: cover;
-}
-.news img {
-  width: 350px;
-  height: 250px;
-  object-fit: fill;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #065208;
-  color: rgb(255, 255, 255);
-}
-
-.card {
-  position: relative;
-  perspective: 800px;
-  transition: transform 1s ease;
-  perspective: 1000px;
-}
-
-.card > * {
-  width: 10rem;
-  transition: transform 1s ease;
-  backface-visibility: hidden;
-  text-decoration: none;
-}
-
-.card:hover > .card__front {
-  transform: rotateY(180deg);
-}
-
-.card:hover > .card__back {
-  transform: rotateY(0);
-  text-decoration: none;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.footer-left,
-.footer-center,
-.footer-right {
-  flex: 1;
-  padding: 20px;
-}
-
-.footer-left img {
-  max-width: 100px;
-}
-
-.footer-right input {
-  width: 80%;
-  padding: 8px;
-  margin: 10px 0;
-}
-
-.footer-right button {
-  background: gold;
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
-}
-
-.social-icons img {
-  width: 30px;
-  margin: 5px;
-}
-
-.navbar-nav {
-  margin-right: 900px;
-  text-decoration: none;
-  display: flex;
-  gap: 20px;
-}
-
-.navbar-nav .nav-link {
-  color: #eae5e2 !important;
-  font-weight: bold;
-  gap: 20;
-  text-decoration: none;
-
-}
-
-.navbar-nav .nav-link:hover {
-  color: #29bd15 !important;
-  text-decoration: none;
-}
-
-.header {
-  background-color: #004d00;
-  color: #ffcc00 !important;
-  text-align: center;
-  padding: 20px;
-  font-weight: bold;
-}
-#About\ us {
-  margin: 40px auto;  /* Adds space above and below the section */
-  padding: 20px;
-  background-color: #f9f9f9;  /* Light background color for contrast */
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Soft shadow for visual depth */
-  max-width: 900px;  /* Limits the width of the section */
-}
-
-#About\ us h2 {
-  color: #15660b;
-  text-align: center;  /* Centers the heading */
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-#About\ us h4 {
-  color: #065208;
-  font-size: 1.5rem;
-  margin-top: 20px;
-}
-
-#About\ us p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #333;
-}
-
-#About\ us ul {
-  list-style-type: disc;
-  margin-left: 40px;
-  font-size: 1rem;
-}
-
-#About\ us ul li {
-  margin-bottom: 10px;
-}
-#Conservation {
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 900px;
-}
-
-#Conservation h2 {
-  color: #15660b;
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-#Conservation .content {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #333;
-}
-
-#Conservation .section-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #065208;
-  margin-top: 20px;
-  text-decoration: underline;
-}
-
-#Conservation ul {
-  list-style-type: disc;
-  margin-left: 40px;
-  font-size: 1rem;
-}
-
-#Conservation ul li {
-  margin-bottom: 10px;
-}
-
-#Conservation ul .important {
-  font-weight: bold;
-  color: #d9534f;
-}
-.center-heading {
-  text-align: center;
-}
-
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
-      <section id="Home">
-        <h1>Endemic Birds in Sri Lanka</h1>
+      <section id="home">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <div class="container">
             <div
@@ -289,33 +23,98 @@ footer {
               id="navbarNav"
             >
               <ul class="navbar-nav">
-                <a class="nav-link" href="#home">Home</a>
-                <a class="nav-link" href="#About us">About</a>
-                <a class="nav-link" href="#Conservation">Conservation</a>
-                <a class="nav-link" href="#News & Articles">News & Articles</a>
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#about-us">About</a></li>
+                <li>
+                  <a class="nav-link" href="#conservation">Conservation</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#news-articles">News & Articles</a>
+                </li>
               </ul>
             </div>
           </div>
         </nav>
+        <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
+        <nav class="menu-panel" id="menu-panel-id">
+          <button class="close-btn" id="btn-close">&times;</button>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <h1>Endemic Birds in Sri Lanka</h1>
+
       </section>
     </header>
+<section id="introduction">
+    <h1>Endemic Birds</h1>
+    <b>
+    <p>
+      Sri Lanka, a tropical island in the Indian Ocean, is renowned for its rich
+      biodiversity, including a remarkable variety of endemic birds. With around
+      34 species found nowhere else in the world, the country is a paradise for
+      bird enthusiasts and researchers. These birds are primarily found in
+      rainforests, montane forests, and dry-zone forests, with many thriving in
+      national parks and nature reserves such as Sinharaja Rainforest, Horton
+      Plains, and Knuckles Mountain Range. </P>
+      <P>One of the most iconic endemic birds
+      is the Sri Lanka Junglefowl (Gallus lafayettii), the national bird
+      of Sri Lanka, which closely resembles a wild rooster with vibrant red,
+      orange, and yellow plumage. Another notable species is the Sri Lanka
+      Blue Magpie (Urocissa ornata), a striking bird with deep blue
+      feathers, a bright red beak, and long tail feathers, often found in dense
+      forests. The Sri Lanka Hanging Parrot (Loriculus beryllinus) is a
+      small, vividly colored green parrot with a red head, commonly seen in
+      forest canopies. Other remarkable species include the Sri Lanka
+      Spurfowl (Galloperdix bicalcarata), a shy ground-dwelling bird that is
+      rarely seen, and the Sri Lanka Wood Pigeon (Columba torringtoniae),
+      which inhabits high-altitude forests.</P>
+      <P>The Crimson-backed Flameback
+      (Chrysocolaptes stricklandi), a stunning woodpecker with golden and
+      crimson plumage, is another unique species native to the island.
+      Unfortunately, habitat destruction, deforestation, and climate change
+      threaten these birds, pushing some species toward endangerment.
+      Conservation efforts, including protected areas and awareness campaigns,
+      are crucial for preserving Sri Lanka’s unique avian heritage. Birdwatchers
+      and conservationists continue to study and safeguard these birds to ensure
+      their survival for future generations.
+    </p>
+  </b>
+  </section>
+    <script>
+      const burger = document.getElementById("burger");
+      const menuPanel = document.getElementById("menu-panel-id");
+      const closeBtn = document.getElementById("btn-close");
 
-    <section id="home">
+      burger.addEventListener("click", () => {
+        menuPanel.classList.add("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        menuPanel.classList.remove("active");
+      });
+    </script>
+
+    <section id="birds">
+      <h2>21 Endemic Birds</h2>
       <div class="card-container">
         <div class="card">
           <a href="/pages/ceylon-Small-Barbet.html">
             <img
               src="https://www.srilankansafari.com/images/birds-of-sri-lanka/sri-lanka-small-barbet/sri-lanka-small-barbet03.jpg"
-              alt="Bird 1"
+              alt="Bird-0"
             />
             <h3>Ceylon Small Barbet</h3>
           </a>
         </div>
         <div class="card">
-          <a href="/pages/red-faced-malkoha.html ">
+          <a href="/pages/red-faced-malkoha.html">
             <img
               src="https://alchetron.com/cdn/red-faced-malkoha-fac0134f-2a23-41be-b129-cf45c9d89d8-resize-750.jpeg"
-              alt="Bird 2"
+              alt="Bird-1"
             />
             <h3>red faced malkoha</h3>
           </a>
@@ -324,6 +123,7 @@ footer {
           <a href="/pages/Ceylon-Spurfowl.html">
             <img
               src="https://cdn.download.ams.birds.cornell.edu/api/v1/asset/545194211/1200"
+              alt="Bird-2"
             />
             <h3>Ceylon Spurfowl</h3>
           </a>
@@ -332,6 +132,7 @@ footer {
           <a href="/pages/Ceylon-Woodpigeon.html">
             <img
               src="https://www.srilankabirdwatchingtours.com/images/birds-of-sri-lanka/sri-lanka-wood-pigeon/sri-lanka-wood-pigeon1.jpg"
+              alt="Bird-3"
             />
             <h3>Ceylon Woodpigeon</h3>
           </a>
@@ -339,7 +140,8 @@ footer {
         <div class="card">
           <a href="/pages/Ceylon-Hill-Myna.html">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Zq7fXEajEzyD_-wCDV-4Ptwd9Um_jBNzCw&s "
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Zq7fXEajEzyD_-wCDV-4Ptwd9Um_jBNzCw&s"
+              alt="Bird-4"
             />
             <h3>Ceylon Hill-Myna</h3>
           </a>
@@ -348,6 +150,7 @@ footer {
           <a href="/pages/Ceylon-Crested-Drongo.html">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Dicrurus_lophorinus_63119961.jpg/640px-Dicrurus_lophorinus_63119961.jpg"
+              alt="Bird-5"
             />
             <h3>Ceylon Crested Drongo</h3>
           </a>
@@ -356,6 +159,7 @@ footer {
           <a href="/pages/Ceylon-White-eye.html">
             <img
               src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9fQNKLGjy03JDxa7y9RRCJrFbV5digeIgVywcHfAKuLyqt1XKG3VlyyMh-86MReQm_48vbaSCHZfKwupdypCrcHEUb8JpGShhmLC_Itpfgo5wErH1dQ3Dsh0m1MzWuko02S255qYYpT-U/s1600/7.jpg"
+              alt="Bird-6"
             />
             <h3>Ceylon White eye</h3>
           </a>
@@ -364,14 +168,16 @@ footer {
           <a href="pages/Legge’s-Flowerpecker.html">
             <img
               src="https://www.srilankansafari.com/images/birds-of-sri-lanka/legges-flower-pecker/legges-flower-pecker03.jpg"
+              alt="Bird-7"
             />
-            <h3>Legge’s Flowerpecker</h3>
+            <h3>Legges Flowerpecker</h3>
           </a>
         </div>
         <div class="card">
           <a href="pages/Ashy-headed-Laughing-Thrush.html">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/8W0A7974.jpg/220px-8W0A7974.jpg"
+              alt="Bird-8"
             />
             <h3>Ashy-headed Laughing Thrush</h3>
           </a>
@@ -380,13 +186,17 @@ footer {
           <a href="pages/Ceylon-Rufous-Babbler.html">
             <img
               src="https://www.srilankabirdwatchingtours.com/images/birds-of-sri-lanka/sri-lanka-rufous-babbler/sri-lanka-rufous-babbler6.jpg"
+              alt="Bird-9"
             />
             <h3>Ceylon Rufous Babbler</h3>
           </a>
         </div>
         <div class="card">
           <a href="pages/Ceylon-Scimitar-Babbler.html">
-            <img src="https://www.lakpura.com/images/LK94009293-02-E.JPG" />
+            <img
+              src="https://www.lakpura.com/images/LK94009293-02-E.JPG"
+              alt="Bird-10"
+            />
             <h3>Ceylon Scimitar-Babbler</h3>
           </a>
         </div>
@@ -394,6 +204,7 @@ footer {
           <a href="pages/Brown-capped-Babbler.html">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Pellorneum_fuscocapillus_325087695_%28cropped%29.jpg/640px-Pellorneum_fuscocapillus_325087695_%28cropped%29.jpg"
+              alt="Bird-11"
             />
             <h3>Brown-capped Babbler</h3>
           </a>
@@ -402,6 +213,7 @@ footer {
           <a href="pages/Dusky-blue-Flycatcher.html">
             <img
               src="https://adventurebirding.lk/wp-content/uploads/2016/02/Dusky-blue-flycatcher.jpg"
+              alt="Bird-12"
             />
             <h3>Dusky-blue Flycatcher</h3>
           </a>
@@ -410,6 +222,7 @@ footer {
           <a href="pages/Ceylon-Bush-Warbler.html">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Flickr_-_Rainbirder_-_Ceylon_bush_warbler_%28Bradypterus_palliseri%29_%28cropped%29.jpg/220px-Flickr_-_Rainbirder_-_Ceylon_bush_warbler_%28Bradypterus_palliseri%29_%28cropped%29.jpg"
+              alt="Bird-13"
             />
             <h3>Ceylon Bush-Warbler</h3>
           </a>
@@ -418,6 +231,7 @@ footer {
           <a href="pages/Ceylon-Scaly-Thrush.html">
             <img
               src="https://df4gcsff7xjx7.cloudfront.net/2018/09/Ceylon-Scaly-Thrush-2.jpg"
+              alt="Bird-14"
             />
             <h3>Ceylon Scaly Thrush</h3>
           </a>
@@ -426,6 +240,7 @@ footer {
           <a href="pages/Spot-winged-Ground-Thrush.html">
             <img
               src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh43L7_d0ch7YCpEN7RQFEfSvNfP5MnJDdDXfXvmP8oky7-q20QhpooqgqkuapJawZIAFm95QFYmkJOvwUevh7waaOO2dyjrNLn00tJBR7ltymBPALxC0TCLgipohcF1_a-4jLd9tcN03LD/s1600/1.jpg"
+              alt="Bird-15"
             />
             <h3>Spot-winged Ground-Thrush</h3>
           </a>
@@ -434,13 +249,17 @@ footer {
           <a href="pages/Ceylon-Whistling-Thrush.html">
             <img
               src="https://www.srilankabirdwatchingtours.com/images/birds-of-sri-lanka/sri-lanka-whistling-thrush/sri-lanka-whistling-thrush2.jpg"
+              alt="Bird-16"
             />
             <h3>Ceylon Whistling Thrush</h3>
           </a>
         </div>
         <div class="card">
           <a href="pages/Yellow-eared-Bulbul.html">
-            <img src="https://www.lakpura.com/images/LK94009300-06-E.JPG" />
+            <img
+              src="https://www.lakpura.com/images/LK94009300-06-E.JPG"
+              alt="Bird-17"
+            />
             <h3>Yellow eared Bulbul</h3>
           </a>
         </div>
@@ -448,6 +267,7 @@ footer {
           <a href="pages/Ceylon-Swallow.html">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Red-rumped_Swallow_%28Cecropis_daurica%29_Photograph_by_Shantanu_Kuveskar.jpg"
+              alt="Bird-18"
             />
             <h3>Ceylon Swallow</h3>
           </a>
@@ -456,6 +276,7 @@ footer {
           <a href="pages/Crimson-backed-Flameback.html">
             <img
               src="https://live.staticflickr.com/7153/6504009667_74e003dc73_z.jpg"
+              alt="Bird-19"
             />
             <h3>Crimson backed Flameback</h3>
           </a>
@@ -464,18 +285,20 @@ footer {
           <a href="pages/ceylon-Green-pigeon.html">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdleld3myAfKdfziOb0iKYQGTgcfy3HbBhcg&s"
+              alt="Bird-20"
             />
             <h3>ceylon Green-pigeon</h3>
           </a>
         </div>
       </div>
     </section>
-    <section id="About us">
+    <section id="About-us">
       <i
         ><h2 style="color: #15660b">
           About Us – Endemic Birds of Sri Lanka
         </h2></i
       >
+      <b>
       <p>
         Sri Lanka is home to a remarkable variety of endemic bird species, found
         nowhere else in the world. Our mission is to educate, inspire, and raise
@@ -509,6 +332,9 @@ footer {
         info@endemicbirds.lk. Let’s work together to preserve Sri Lanka’s
         natural heritage!
       </p>
+    </b>
+    <a href="/pages/about.html" class="btn">More</a>
+
     </section>
     <br />
     <section id="Conservation">
@@ -575,51 +401,54 @@ footer {
           </ul>
         </b>
       </div>
+      <a href="/pages/conservation.html" class="btn">More</a>
+
     </section>
     <br />
-    <section id="News & Articles">
-      <i><h2  class="center-heading" style="color: #15660b">News & Articles</h2></i>
+    <section id="news-articles">
+      <i
+        ><h2 class="center-heading" style="color: #15660b">
+          News & Articles
+        </h2></i
+      >
       <div class="news-container">
         <div class="news">
-          <img src="/image/thethbim.jpg" />
+          <img src="/image/thethbim.jpg" alt="news-1" />
           <h3>MAWBIMA</h3>
         </div>
         <div class="news">
-          <img src="/image/atuwahi.jpg" />
+          <img src="/image/atuwahi.jpg" alt="news-2" />
           <h3>DINAMINA</h3>
         </div>
         <div class="news">
-          <img src="/image/red.jpg" />
+          <img src="/image/red.jpg" alt="news-3" />
           <h3>LANKADEEPA</h3>
         </div>
         <div class="news">
           <img
-            src="https://images.squarespace-cdn.com/content/v1/5c94ab21a09a7e443410d831/1597300509038-A8ORH2JNTDD3IGPBJLBM/ayu-in-the-wild+-sri-lanka-bird-watching-magazine-uk?format=1500w "
+            src="https://images.squarespace-cdn.com/content/v1/5c94ab21a09a7e443410d831/1597300509038-A8ORH2JNTDD3IGPBJLBM/ayu-in-the-wild+-sri-lanka-bird-watching-magazine-uk?format=1500w"
+            alt="news-4"
           />
-          <h3>MAWBIMA</h3>
+          <h3>BLOG</h3>
         </div>
         <div class="news">
-          <img src="/image/81.png" />
+          <img src="/image/81.png" alt="news-5" />
           <h3>DAILY MIRROR</h3>
         </div>
         <div class="news">
-          <img src="/image/Collabarate.png" />
+          <img src="/image/Collabarate.png" alt="news-6" />
           <h3>DAILY MIRROR</h3>
         </div>
         <div class="news">
-          <img src="/image/No.png" />
+          <img src="/image/No.png" alt="news-7" />
           <h3>DAILY MIRROR</h3>
         </div>
         <div class="news">
-          <img
-            src="https://z-p3-scontent.fcmb9-1.fna.fbcdn.net/v/t39.30808-6/473740652_1010474691109870_4730993718035214112_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ZAPtbSVgTc0Q7kNvgGTAr-9&_nc_oc=AdgbaHH9nNjO6nHTVhMJyyk42VFYx1pcSnO3ykoXBQn2PIBYF16bLTjmxBzZCXKJalE&_nc_zt=23&_nc_ht=z-p3-scontent.fcmb9-1.fna&_nc_gid=AbdYmM0Co3hKwjtJqWqJ2Mq&oh=00_AYBc873LKgKrL3XtxwBrbI9bQ5-Dt77Tk_InisXFV2umew&oe=67BC02AF"
-          />
+          <img src="/image/image copy.png" alt="news-8" />
           <h3>DAILY MIRROR</h3>
         </div>
         <div class="news">
-          <img
-            src="/image/image.png"
-          />
+          <img src="/image/image.png" alt="news-9" />
           <h3>DAILY MIRROR</h3>
         </div>
       </div>
@@ -652,7 +481,7 @@ footer {
               ><img src="/image/icons8-instagram-logo-50.png" alt="Instagram"
             /></a>
             <a href="#"
-              ><img src="image/icons8-facebook-50.png" alt="facebok"
+              ><img src="image/icons8-facebook-50.png" alt="facebook"
             /></a>
           </div>
         </div>
