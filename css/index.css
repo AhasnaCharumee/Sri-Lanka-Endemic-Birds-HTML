@@ -319,9 +319,12 @@ footer {
   font-size: 1.2rem;
   cursor: pointer;
   display: none;
+  left:250px;
+  position: relative;
 }
 .menu-panel {
-  background-color: black;
+  background-color:#035113;
+
   color: white;
   height: 100%;
   width: 250px;

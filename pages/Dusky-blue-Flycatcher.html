@@ -5,79 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dusky-blue Flycatcher</title>
     <link rel="styleSheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
-
-    <section id="home">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <div
-            class="collapse navbar-collapse justify-content-right"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li><a class="nav-link" href="/index.html">Home</a></li>
-              <li><a class="nav-link" href="/index.html">About</a></li>
-              <li>
-                <a class="nav-link" href="/index.html">Conservation</a>
-              </li>
-              <li>
-                <a class="nav-link" href="/index.html">News & Articles</a>
-              </li>
-            </ul>
+      <section id="home">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+            <div
+              class="collapse navbar-collapse justify-content-right"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li><a class="nav-link" href="/index.html">Home</a></li>
+                <li><a class="nav-link" href="/pages/about.html">About</a></li>
+                <li>
+                  <a class="nav-link" href="/pages/conservation.html">Conservation</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="/index.html">News & Articles</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-      <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
-      <nav class="menu-panel" id="menu-panel-id">
-        <button class="close-btn" id="btn-close">&times;</button>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <h1>Endemic Birds in Sri Lanka</h1>
-    </section>
-  </header>
+        </nav>
+        <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
+        <nav class="menu-panel" id="menu-panel-id">
+          <button class="close-btn" id="btn-close">&times;</button> 
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/about.html">About Us</a></li>
+            <li><a href="/pages/conservation.html">Conservation</a></li>
+            <li><a href="/index.html">News & Articles</a></li>
+          </ul>
+        </nav>
+    
+        <h1>Endemic Birds in Sri Lanka</h1>
+      </section>
+    </header>
+    <script>
+      const burger = document.getElementById("burger");
+      const menuPanel = document.getElementById("menu-panel-id");
+      const closeBtn = document.getElementById("btn-close");
+
+      burger.addEventListener("click", () => {
+        menuPanel.classList.add("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        menuPanel.classList.remove("active");
+      });
+    </script>
     <h2>
       <i>Dusky-blue Flycatcher-ශ්‍රී ලංකා අනු-මැසිමාරා | නිල් මාරාවා </i>
     </h2>
 
-    <img class="bird"
-      src="https://us.lakpura.com/cdn/shop/files/LK94009550-31-E.jpg?v=1654244575&width=3200"
+    <img
+      class="bird"
+      src="/image/duskyblue.jpg"
       style="height: 300px; width: 300px"
       alt="Dusky-blue Flycatcher"
     />
 
     <p>
-      Muscicapidae. It was previously included in the genus Muscicapa. This
-      species is an endemic resident breeder in the hills of central Sri Lanka.
-      The dull-blue flycatcher breeds in deciduous mountain forest, invariably
-      above 600m, although it is not common below 900m. The main breeding season
-      is in March and April, but a second brood is often reared later in the
-      year.
+      Dusky-blue Flycatcher is a small, insectivorous bird belonging to the
+      Muscicapidae family, commonly found in tropical and subtropical forests of
+      sub-Saharan Africa. With a length of about 12–14 cm, it has a slender
+      body, medium-length tail, and a sharp beak adapted for capturing insects.
+      As its name suggests, this species exhibits a dusky-blue coloration,
+      particularly on its upper parts, while the underparts are a lighter shade
+      of gray or pale blue. Its round, dark eyes provide excellent vision for
+      detecting movement, and its agile flight makes it an efficient hunter.
     </p>
-    <P>
-    The cup-shaped nest is a lined compact mass of moss. The site is usually a
-    well-shaded rock ledge. The normal clutch is two or three brown-spotted pink
-    eggs are laid.This species is 15 cm long. It is similar in shape to the
-    spotted flycatcher and has a loud melodic song..
-  </P>
     <p>
-      Adults are ashy blue, with a whitish belly. There is a black patch between
-      the broad black bill and the eye, bordered with brighter blue above and
-      below. Sexes are similar, but females are slightly duller.
+      Primarily inhabiting dense woodlands, moist lowland forests, and riverine
+      areas, the Dusky-blue Flycatcher thrives at elevations ranging from sea
+      level to about 1,800 meters. It is not a long-distance migrant, but some
+      populations show seasonal movements in search of food. This bird is an
+      expert insect hunter, using a "sallying" technique to perch and swiftly
+      snatch prey from the air. Its diet mainly consists of flies, beetles,
+      moths, ants, and small spiders, playing a crucial role in controlling
+      insect populations within its habitat.
+    </p>
+    <p>
+      Breeding occurs mainly during the rainy season when food is abundant.
+      Males attract females through melodious whistles and trills, which also
+      serve to establish and defend territories. Nesting sites are typically
+      located in tree hollows or dense shrubbery, with nests constructed from
+      twigs, moss, and spider silk. A typical clutch consists of 2–4 eggs,
+      incubated for about 12–15 days. Once hatched, the chicks are fed by both
+      parents and fledge within two to three weeks, though they remain dependent
+      on their parents for a short period.
     </p>
 
     <p>
-      Juvenile dull-blue flycatchers are brown, heavily spotted on the head,
-      back, wing-coverts and breast with pale buff; their flight feathers are
-      broadly edged with blue-grey. This is relatively easy bird to see, despite
-      its forest habitat. It feeds mainly on flying insects, beetles,
-      caterpillars and other insects, but also eats berries.
+      Despite its relatively stable population, the Dusky-blue Flycatcher faces
+      threats from habitat loss due to deforestation, climate change, and
+      predation by birds of prey, snakes, and small mammals. Near human
+      settlements, domestic cats also pose a danger. However, the species is
+      currently classified as Least Concern by the IUCN, meaning it is not
+      immediately at risk of extinction. Conservation efforts, including the
+      protection of forests and reforestation projects, are essential in
+      maintaining its population.
+    </p>
+    <p>
+      This bird is not only ecologically important as a natural pest controller
+      but also attracts birdwatchers and ornithologists due to its striking
+      appearance and agile flight. Interestingly, it sometimes follows monkey
+      troops, catching insects disturbed by their movement through the forest.
+      Unlike some flycatchers that prefer open areas, the Dusky-blue Flycatcher
+      thrives in dense vegetation, where it skillfully maneuvers through
+      branches in search of food.
+    </p>
+    <p>
+      A vital part of its ecosystem, the Dusky-blue Flycatcher continues to
+      adapt to changing environments, but conservation efforts remain crucial in
+      ensuring its long-term survival. Preserving the forests it depends on will
+      help maintain biodiversity and the delicate balance of insect populations
+      in its natural habitat.
     </p>
     <footer>
       <div class="footer-container">
@@ -93,11 +144,11 @@
         </div>
         <div class="footer-center">
           <b>
-          <h3>NATURE AHAS LTD</h3>
-          <p>First Lane,Welipitiya<br />Weligama, Sri Lanka</p>
-          <p>+94 7726 90 531</p>
-          <p>ahasnacharumee@gmail.com</p>
-        </b>
+            <h3>NATURE AHAS LTD</h3>
+            <p>First Lane,Welipitiya<br />Weligama, Sri Lanka</p>
+            <p>+94 7726 90 531</p>
+            <p>ahasnacharumee@gmail.com</p>
+          </b>
         </div>
         <div class="footer-right">
           <h3>Follow Us</h3>
