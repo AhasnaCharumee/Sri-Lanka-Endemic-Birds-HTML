@@ -5,83 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yellow eared Bulbul</title>
     <link rel="styleSheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
-
-    <section id="home">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <div
-            class="collapse navbar-collapse justify-content-right"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li><a class="nav-link" href="/index.html">Home</a></li>
-              <li><a class="nav-link" href="/index.html">About</a></li>
-              <li>
-                <a class="nav-link" href="/index.html">Conservation</a>
-              </li>
-              <li>
-                <a class="nav-link" href="/index.html">News & Articles</a>
-              </li>
-            </ul>
+      <section id="home">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+            <div
+              class="collapse navbar-collapse justify-content-right"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li><a class="nav-link" href="/index.html">Home</a></li>
+                <li><a class="nav-link" href="/index.html">About</a></li>
+                <li>
+                  <a class="nav-link" href="/index.html">Conservation</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="/index.html">News & Articles</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-      <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
-      <nav class="menu-panel" id="menu-panel-id">
-        <button class="close-btn" id="btn-close">&times;</button>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <h1>Endemic Birds in Sri Lanka</h1>
-    </section>
-  </header>
+        </nav>
+        <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
+        <nav class="menu-panel" id="menu-panel-id">
+          <button class="close-btn" id="btn-close">&times;</button>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/about.html">About Us</a></li>
+            <li><a href="/pages/conservation.html">Conservation</a></li>
+            <li><a href="/index.html">News & Articles</a></li>
+          </ul>
+        </nav>
+        <h1>Endemic Birds in Sri Lanka</h1>
+      </section>
+    </header>
+    <script>
+      const burger = document.getElementById("burger");
+      const menuPanel = document.getElementById("menu-panel-id");
+      const closeBtn = document.getElementById("btn-close");
+
+      burger.addEventListener("click", () => {
+        menuPanel.classList.add("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        menuPanel.classList.remove("active");
+      });
+    </script>
     <h2>
       <i>Yellow eared Bulbul - කහකන් කොණ්ඩයා </i>
     </h2>
 
-    <img class="bird"
-      src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4LdUFgSza1RGjpsvs3fG-jxTsY_gfpnl4sW8W3olHVVTwDfaU05cRybZyYrVOQRDfOMQglLSQ9nHRNXlRulRB0A"
+    <img
+      class="bird"
+      src="/image/yellowBird.jpg"
       style="height: 300px; width: 300px"
       alt="Yellow eared Bulbul"
     />
 
     <p>
-      The tuft of yellow feathers over the ear and white streak in front of the
-      eye easily distinguishes this from all the other bulbuls. Females are
-      distinguished from males by their slightly smaller size and broad yellow
-      tail-tips. These birds reach 18.5 – 20 cm in length. Yellow-eared bulbuls
-      are restricted to the higher hills, mostly above 1,700 meters altitude.
-      They do descent to about 1,100 meters on the western slopes, but are
-      rarely seen below 1,200 meters on the eastern side of the central
-      mountains. They also occur in the higher parts of the Knuckles Range and
-      Sinharaja.
+      The Yellow-eared Bulbul (Pycnonotus penicillatus) is one of Sri Lanka’s
+      most striking and unique birds. Endemic to the island, this species is
+      found exclusively in the highland forests, particularly in the wet zone.
+      With its vibrant yellow ear patches, olive-green body, and musical calls,
+      it plays an essential role in the country’s rich biodiversity. Despite its
+      beauty, habitat loss poses a significant threat to its survival. This
+      article provides a comprehensive insight into the Yellow-eared Bulbul,
+      covering its physical characteristics, habitat, diet, behavior, breeding
+      patterns, and conservation status.
     </p>
-    <P>
-    They are rather shy birds that generally keep to the forest and seen
-    occasionally in gardens. The sharp whee, whee, whee call is unmistakable.
-    They gather in large numbers, preferring to feed on berries among shrubs and
-    in the mid-canopy. Yellow-eared Bulbuls breed throughout the year, with two
-    peaks in March-May and August-October (the former being the major peak). An
-    open, cup-shaped nest is built in a tree fork about 3-5 meters above the
-    ground. The nest is constructed mostly from green moss, the cup being lined
-    with fine ferns and rootlets. The speckled eggs which sometimes appear
-    pinkish with reddish brown markings, measure around 23.4 x 16.7 mm.
-  </P>
     <p>
-      Breeding takes place during two marked seasons; March to May, and August
-      to September. Both birds excavate the nest chamber. The chamber entrance
-      is usually 3 – 6 meters above the gr sometimes higher. The diameter of the
-      entrance is about 25 cm, the chamber depth being .5 cm. No nesting
-      materials are used, and up to three pure white eggs. Both parents
-      participate in incubating the eggs and feeding the young.
+      The Yellow-eared Bulbul is a medium-sized bird, typically measuring around 20 cm (8 inches) in length. Its most distinctive feature is the bright yellow patch behind its eyes, resembling "ears." The head is adorned with black-and-white streaks, giving it a striking contrast against its yellow markings. The body is predominantly olive-green, with a slightly paler underbelly. Its beak is short and slightly curved, suited for feeding on fruits and insects. The tail is relatively long, with dark feathers tipped in white. Males and females look alike, making it difficult to differentiate between the sexes based on appearance alone.
     </p>
+    <p>
+      Being an endemic species, the Yellow-eared Bulbul is found only in Sri Lanka, primarily in the high-altitude forests of the central hills. It prefers elevations between 1,000 to 2,500 meters above sea level, thriving in montane forests, tea estates, and forest edges. Notable locations where this bird can be spotted include Horton Plains National Park, Sinharaja Forest Reserve, Knuckles Mountain Range, and the forests surrounding Nuwara Eliya and Ella.
+
+      The dense foliage of these forests provides ample cover for nesting and foraging. Unlike many other bulbuls that adapt to urban environments, the Yellow-eared Bulbul is more dependent on natural forests, making it particularly vulnerable to deforestation and habitat degradation.
+    </p>
+    <P>The Yellow-eared Bulbul is an omnivore, with its diet consisting mainly of fruits, berries, seeds, and insects. It plays a crucial role in forest ecosystems as a seed disperser. By consuming a variety of fruits and excreting seeds elsewhere, it aids in the regeneration of forests.</P>
+    <P>The Yellow-eared Bulbul is an active and social bird, often seen in pairs or small family groups. It is not as aggressive as some other bulbul species but is known to defend its nesting territory. The bird’s call is loud, melodious, and distinctive, consisting of a series of whistling and chattering sounds. These calls serve various purposes, such as attracting mates, warning others of danger, and communicating with group members.
+
+      Unlike some bulbul species that prefer open areas, the Yellow-eared Bulbul spends much of its time in dense foliage, flitting from branch to branch in search of food. It is not a migratory bird and remains within its preferred habitat year-round.</P>
+    <P>The Yellow-eared Bulbul is an important symbol of Sri Lanka’s biodiversity. Its presence in montane forests indicates a healthy ecosystem. Moreover, as a seed disperser, it helps in maintaining the balance of plant life in its habitat. Birdwatchers and nature enthusiasts appreciate this species for its vibrant appearance and beautiful calls, making it a favorite subject for photography and research.</P>
+    <P>If you wish to observe the Yellow-eared Bulbul in its natural habitat, consider visiting Horton Plains National Park or the forests of Nuwara Eliya. The best time to see them is early in the morning, when they are most active. Carrying binoculars and a good camera can enhance your birdwatching experience. Listen for their distinctive whistling calls and watch for their yellow markings in the foliage.</P> 
+    <P>The Yellow-eared Bulbul is a fascinating and beautiful bird that adds to the richness of Sri Lanka’s wildlife. However, habitat destruction and environmental changes threaten its survival. Conservation efforts are crucial to ensuring that future generations can continue to enjoy and appreciate this remarkable species. By protecting Sri Lanka’s forests and raising awareness about endangered species, we can help preserve the unique biodiversity of the island.</P>
     <footer>
       <div class="footer-container">
         <div class="footer-left">
@@ -96,11 +112,11 @@
         </div>
         <div class="footer-center">
           <b>
-          <h3>NATURE AHAS LTD</h3>
-          <p>First Lane,Welipitiya<br />Weligama, Sri Lanka</p>
-          <p>+94 7726 90 531</p>
-          <p>ahasnacharumee@gmail.com</p>
-        </b>
+            <h3>NATURE AHAS LTD</h3>
+            <p>First Lane,Welipitiya<br />Weligama, Sri Lanka</p>
+            <p>+94 7726 90 531</p>
+            <p>ahasnacharumee@gmail.com</p>
+          </b>
         </div>
         <div class="footer-right">
           <h3>Follow Us</h3>
