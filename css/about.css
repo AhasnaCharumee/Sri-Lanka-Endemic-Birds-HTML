@@ -1,0 +1,39 @@
+.about-card {
+    margin:40px;
+    width: 100%;
+
+    text-align: center;
+    
+    position: relative;
+    overflow: hidden;
+  }
+  .team-table {
+    margin: 10px;
+    text-align: center;
+  }
+  h4{
+    margin-left: 100px;
+  }
+h3{
+  margin-left:80px;
+}
+@keyframes slideInLeft {
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.heading-1{
+    animation-name:slideInLeft;
+    animation-duration: 2s ;
+    animation-timing-function: ease-in-out ;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: backwards
+    ;
+
+    transform: translateX(-150px);
+}
