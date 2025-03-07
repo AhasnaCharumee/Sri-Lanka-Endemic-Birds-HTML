@@ -46,7 +46,7 @@ h1{
 h2{
   font-size: 2rem;
   text-align: center;
-  margin-top: 50vh;
+  margin-top: 40vh;
 }
 .center-heading {
   text-align: center;
@@ -137,7 +137,25 @@ h2{
 .menu-panel.active {
   right: 0;
 }
+.menu-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #1bea1b;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s ease;
+  width:150px;
+}
 
+.menu-btn:hover {
+  background-color: #ffffff;
+  color:#065208;
+}
 #Birdi{
   margin-top: 10%;
 }

@@ -37,3 +37,604 @@ h3{
 
     transform: translateX(-150px);
 }
+@media (max-width: 320px) {
+  table {
+      font-size: 12px;
+  }
+
+  th, td {
+      padding: 8px;
+  }
+
+  .table-container {
+      overflow-x: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  table {
+      font-size: 14px;
+  }
+
+  th, td {
+      padding: 10px;
+  }
+
+  .table-container {
+      overflow-x: auto;
+  }
+}
+
+@media (max-width: 425px) {
+  table {
+      font-size: 16px;
+  }
+
+  th, td {
+      padding: 12px;
+  }
+
+  .table-container {
+      overflow-x: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  table {
+      font-size: 18px;
+  }
+
+  th, td {
+      padding: 14px;
+  }
+
+  .table-container {
+      overflow-x: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  table {
+      font-size: 20px;
+  }
+
+  th, td {
+      padding: 16px;
+  }
+
+  .table-container {
+      overflow-x: auto;
+  }
+}
+
+@media (max-width: 1440px) {
+  table {
+      font-size: 22px;
+  }
+
+  th, td {
+      padding: 18px;
+  }
+
+  .table-container {
+      overflow-x: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #065208;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  z-index: 1000;
+  background-image: url(/image/ricardo-porto-1oOv4stIKB4-unsplash.jpg
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+
+}
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 2.5rem;
+  text-align: center;
+}
+.center-heading {
+  text-align: center;
+}
+
+.navbar-nav {
+  margin-left: 900px;
+  text-decoration: none;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color:gold;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color:gold !important;
+}
+
+.navbar-nav .nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.ul-navbar-nav {
+  text-align: left;
+}
+#introduction{
+  margin: 40px auto;
+  padding: 17px;
+  background-color: rgb(110 204 96);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top:20%;
+  max-width: 90%;
+  background-image: url(/image/bee-eaters-with-multicolored-feathers-sitting-tree-branch.jpg
+  );
+  backdrop-filter: blur(10px);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bird{
+  align-items: center;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  padding: 26px;
+  justify-items: center;
+}
+.card {
+  border: 1px solid #ddd;
+  margin: 15px;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  height: 350px;
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.card img {
+  width: 100%;
+  height: 287px;
+  object-fit: cover;
+}
+#About-us {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  background-image: url(/image/closeup-shot-common-kingfisher-bird-perched-branch-fixing-its-plumage.jpg
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(10px);
+}
+
+#About-us h2 {
+  color: #15660b;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#About-us h4 {
+  color: #065208;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+#About-us p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+#About-us ul {
+  list-style-type: disc;
+  margin-left: 40px;
+  font-size: 1rem;
+}
+
+#About-us ul li {
+  margin-bottom: 10px;
+}
+
+#Conservation {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  background-image: url(/image/cute-brown-house-sparrow-standing-wooden-stick-observing-its-surroundings.jpg
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#Conservation h2 {
+  color: #15660b;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#Conservation .content {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+#Conservation .section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #065208;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+#Conservation ul {
+  list-style-type: disc;
+  margin-left: 40px;
+  font-size: 1rem;
+}
+
+#Conservation ul li {
+  margin-bottom: 10px;
+}
+
+#Conservation ul .important {
+  font-weight: bold;
+  color: #d9534f;
+}
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  justify-content: center;
+}
+.news {
+  border: 1px solid #ddd;
+  margin: 30px;
+  padding: 10px;
+  width: 350px;
+  text-align: center;
+  background-color:  #035113;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  color:white;
+}
+
+.news:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.news img {
+  width: 350px;
+  height: 250px;
+  object-fit: fill;
+}
+
+
+p{
+  font-size: 20px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(32 114 19); 
+  color: #fff; 
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #f8fbff; 
+color:black;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  background-image: url(/image/ricardo-porto-1oOv4stIKB4-unsplash.jpg
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-left img {
+  max-width: 100px;
+}
+
+.footer-right input {
+  width: 80%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.footer-right button {
+  background: gold;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 5px;
+}
+#burger {
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none;
+  left:250px;
+  position: relative;
+}
+.menu-panel {
+  background-color:#035113;
+
+  color: white;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: right 0.5s ease-in-out;
+}
+.menu-panel ul {
+  list-style: none;
+  padding: 50px 20px;
+}
+.menu-panel ul li {
+  margin-bottom: 16px;
+}
+.menu-panel ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+.close-btn {
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.cons-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 26px;
+  justify-items: center;
+}
+.cons-card {
+  margin: 5px;
+  width: 100%;
+  border-radius:5%;
+  text-align: center;
+  background-color: transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+.cons-card:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.cons-card img {
+  width: 100%;
+  object-fit: cover;
+    border-radius:5%;
+
+}
+@media (max-width: 992px) {
+  
+  .hamburger-menu {
+    display: flex;
+  }
+  .links ul {
+    display: none;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  .heading {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .card img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  #About-us, #Conservation {
+    padding: 15px;
+    margin: 20px auto;
+    width: 90%; 
+  }
+
+  #About-us h2, #Conservation h2 {
+    font-size: 1.5rem;
+  }
+
+  #About-us p, #Conservation p {
+    font-size: 0.9rem;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .footer-right input {
+    width: 90%;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .left-content,
+  .right-content {
+    padding: 0.4rem;
+  }
+  .card img {
+    width: 100%;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .news-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .news {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  #burger {
+    display: block;
+  }
+  .navigation {
+    display: none;
+  }
+  .logo-container > h3 {
+    display: none;
+  }
+  .menu-panel.active {
+    right: 0;
+  }
+  .card {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  h4 {
+    font-size: 0.9rem;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+}
