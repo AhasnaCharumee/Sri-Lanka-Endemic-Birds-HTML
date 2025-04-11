@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sri Lankan Endemic Birds</title>
     <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/animation.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -18,20 +19,29 @@
       <section id="home">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <div class="container">
-            <div class="logo" style="max-width: 20%; margin-left: -1%; margin-top: -2%;max-height: 15%;">
-              <img src="/image/gradient-hummingbird-logo-design.png" alt="logo" style="max-height: 15%;max-width:40%;margin-top:2%; ">
-            </div>
             <div
-              class="collapse-navbar"
-              id="navbarNav"
+              class="logo"
+              style="
+                max-width: 20%;
+                margin-left: -1%;
+                margin-top: -2%;
+                max-height: 15%;
+              "
             >
-           
-              <ul class="navbar-nav" style="margin-top: -3%; margin-left: 55%;">
-                
+              <img
+                src="/image/gradient-hummingbird-logo-design.png"
+                alt="logo"
+                style="max-height: 15%; max-width: 40%; margin-top: 2%"
+              />
+            </div>
+            <div class="collapse-navbar" id="navbarNav">
+              <ul class="navbar-nav" style="margin-top: -3%; margin-left: 55%">
                 <li><a class="nav-link" href="index.html">HOME</a></li>
                 <li><a class="nav-link" href="/pages/about.html">ABOUT</a></li>
                 <li>
-                  <a class="nav-link" href="/pages/conservation.html">CONSERVATION</a>
+                  <a class="nav-link" href="/pages/conservation.html"
+                    >CONSERVATION</a
+                  >
                 </li>
                 <li>
                   <a class="nav-link" href="index.html">DONATE</a>
@@ -48,54 +58,70 @@
           <button class="close-btn" id="btn-close">&times;</button>
           <ul>
             <div class="logo">
-              <img src="/image/gradient-hummingbird-logo-design.png" alt="logo">
+              <img
+                src="/image/gradient-hummingbird-logo-design.png"
+                alt="logo"
+              />
             </div>
             <li><a class="menu-btn" href="/index.html"> HOME</a></li>
             <li><a class="menu-btn" href="/pages/about.html">ABOUT</a></li>
-            <li><a class="menu-btn" href="/pages/conservation.html">CONSERVATION</a></li>
+            <li>
+              <a class="menu-btn" href="/pages/conservation.html"
+                >CONSERVATION</a
+              >
+            </li>
             <li><a class="menu-btn" href="/index.html">DONATE </a></li>
             <li><a class="menu-btn" href="/index.html">CONTACT</a></li>
           </ul>
         </nav>
-        <!-- <h1>Endemic Birds in Sri Lanka</h1> -->
-
       </section>
     </header>
-<section id="introduction">
-    <h1>Endemic Birds</h1>
+    <h1
+      class="main-text"
+      style="margin-top: 35%; text-align: center; font-size: 5rem; color: white"
+    >
+      <span  style="color: rgb(29, 175, 27);">Endemic</span> Birds in Sri Lanka
+    </h1>
+
+    <section id="introduction">
+      <div class="section-wrap">
+        <h1>Endemic Birds</h1>
   
-    <p>
-      <b>
-      Sri Lanka, a tropical island in the Indian Ocean, is renowned for its rich
-      biodiversity, including a remarkable variety of endemic birds. With around
-      34 species found nowhere else in the world, the country is a paradise for
-      bird enthusiasts and researchers. These birds are primarily found in
-      rainforests, montane forests, and dry-zone forests, with many thriving in
-      national parks and nature reserves such as Sinharaja Rainforest, Horton
-      Plains, and Knuckles Mountain Range. </P>
-      <P>One of the most iconic endemic birds
-      is the Sri Lanka Junglefowl (Gallus lafayettii), the national bird
-      of Sri Lanka, which closely resembles a wild rooster with vibrant red,
-      orange, and yellow plumage. Another notable species is the Sri Lanka
-      Blue Magpie (Urocissa ornata), a striking bird with deep blue
-      feathers, a bright red beak, and long tail feathers, often found in dense
-      forests. The Sri Lanka Hanging Parrot (Loriculus beryllinus) is a
-      small, vividly colored green parrot with a red head, commonly seen in
-      forest canopies. Other remarkable species include the Sri Lanka
-      Spurfowl (Galloperdix bicalcarata), a shy ground-dwelling bird that is
-      rarely seen, and the Sri Lanka Wood Pigeon (Columba torringtoniae),
-      which inhabits high-altitude forests.</P>
-      <P>The Crimson-backed Flameback
-      (Chrysocolaptes stricklandi), a stunning woodpecker with golden and
-      crimson plumage, is another unique species native to the island.
-      Unfortunately, habitat destruction, deforestation, and climate change
-      threaten these birds, pushing some species toward endangerment.
-      Conservation efforts, including protected areas and awareness campaigns,
-      are crucial for preserving Sri Lanka’s unique avian heritage. Birdwatchers
-      and conservationists continue to study and safeguard these birds to ensure
-      their survival for future generations.
-    </b>
-    </p>
+        <p style="margin-top: 5%;">
+          <b>
+          Sri Lanka, a tropical island in the Indian Ocean, is renowned for its rich
+          biodiversity, including a remarkable variety of endemic birds. With around
+          34 species found nowhere else in the world, the country is a paradise for
+          bird enthusiasts and researchers. These birds are primarily found in
+          rainforests, montane forests, and dry-zone forests, with many thriving in
+          national parks and nature reserves such as Sinharaja Rainforest, Horton
+          Plains, and Knuckles Mountain Range. </P>
+          <P>One of the most iconic endemic birds
+          is the Sri Lanka Junglefowl (Gallus lafayettii), the national bird
+          of Sri Lanka, which closely resembles a wild rooster with vibrant red,
+          orange, and yellow plumage. Another notable species is the Sri Lanka
+          Blue Magpie (Urocissa ornata), a striking bird with deep blue
+          feathers, a bright red beak, and long tail feathers, often found in dense
+          forests. The Sri Lanka Hanging Parrot (Loriculus beryllinus) is a
+          small, vividly colored green parrot with a red head, commonly seen in
+          forest canopies. Other remarkable species include the Sri Lanka
+          Spurfowl (Galloperdix bicalcarata), a shy ground-dwelling bird that is
+          rarely seen, and the Sri Lanka Wood Pigeon (Columba torringtoniae),
+          which inhabits high-altitude forests.</P>
+          <P>The Crimson-backed Flameback
+          (Chrysocolaptes stricklandi), a stunning woodpecker with golden and
+          crimson plumage, is another unique species native to the island.
+          Unfortunately, habitat destruction, deforestation, and climate change
+          threaten these birds, pushing some species toward endangerment.
+          Conservation efforts, including protected areas and awareness campaigns,
+          are crucial for preserving Sri Lanka’s unique avian heritage. Birdwatchers
+          and conservationists continue to study and safeguard these birds to ensure
+          their survival for future generations.
+        </b>
+        </p>
+
+      </div>
+   
   
   </section>
     <script>
@@ -111,196 +137,132 @@
         menuPanel.classList.remove("active");
       });
     </script>
-
-    <section id="birds">
+    <section id="birds" style="margin-top: 80%">
       <h2>21 Endemic Birds</h2>
       <div class="card-container">
         <div class="card">
           <a href="/pages/ceylon-Small-Barbet.html">
-            <img
-              src="/image/sri-lanka-small-barbet2.jpg"
-              alt="Bird-0"
-            />
+            <img src="/image/sri-lanka-small-barbet2.jpg" alt="Bird-0" />
             <h3>Ceylon Small Barbet</h3>
           </a>
         </div>
         <div class="card">
           <a href="/pages/red-faced-malkoha.html">
-            <img
-              src="/image/red-faced.webp"
-              alt="Bird-1"
-            />
+            <img src="/image/red-faced.webp" alt="Bird-1" />
             <h3>red faced malkoha</h3>
           </a>
         </div>
         <div class="card">
           <a href="/pages/Ceylon-Spurfowl.html">
-            <img
-              src="/image/spurfowl.jpg"
-              alt="Bird-2"
-            />
+            <img src="/image/spurfowl.jpg" alt="Bird-2" />
             <h3>Ceylon Spurfowl</h3>
           </a>
         </div>
         <div class="card">
           <a href="/pages/Ceylon-Woodpigeon.html">
-            <img
-              src="/image/sri-lanka-wood-pigeon02.jpg"
-              alt="Bird-3"
-            />
+            <img src="/image/sri-lanka-wood-pigeon02.jpg" alt="Bird-3" />
             <h3>Ceylon Woodpigeon</h3>
           </a>
         </div>
         <div class="card">
           <a href="/pages/Ceylon-Hill-Myna.html">
-            <img
-              src="/image/sri-lanka-hill-mynah04.jpg"
-              alt="Bird-4"
-            />
+            <img src="/image/sri-lanka-hill-mynah04.jpg" alt="Bird-4" />
             <h3>Ceylon Hill-Myna</h3>
           </a>
         </div>
         <div class="card">
           <a href="/pages/Ceylon-Crested-Drongo.html">
-            <img
-              src="/image/drongo.jpeg"
-              alt="Bird-5"
-            />
+            <img src="/image/drongo.jpeg" alt="Bird-5" />
             <h3>Ceylon Crested Drongo</h3>
           </a>
         </div>
         <div class="card">
           <a href="/pages/Ceylon-White-eye.html">
-            <img
-              src="/image/white.jpg"
-              alt="Bird-6"
-            />
+            <img src="/image/white.jpg" alt="Bird-6" />
             <h3>Ceylon White eye</h3>
           </a>
         </div>
         <div class="card">
           <a href="pages/Legge’s-Flowerpecker.html">
-            <img
-              src="/image/legges-flower-pecker03.jpg"
-              alt="Bird-7"
-            />
+            <img src="/image/legges-flower-pecker03.jpg" alt="Bird-7" />
             <h3>Legges Flowerpecker</h3>
           </a>
         </div>
         <div class="card">
           <a href="pages/Ashy-headed-Laughing-Thrush.html">
-            <img
-              src="/image/Ashy.jpg"
-              alt="Bird-8"
-            />
+            <img src="/image/Ashy.jpg" alt="Bird-8" />
             <h3>Ashy-headed Laughing Thrush</h3>
           </a>
         </div>
         <div class="card">
           <a href="pages/Ceylon-Rufous-Babbler.html">
-            <img
-              src="/image/rufous-babbler6.jpg"
-              alt="Bird-9"
-            />
+            <img src="/image/rufous-babbler6.jpg" alt="Bird-9" />
             <h3>Ceylon Rufous Babbler</h3>
           </a>
         </div>
         <div class="card">
           <a href="pages/Ceylon-Scimitar-Babbler.html">
-            <img
-              src="/image/sri-lanka-scimitar-babbler4.jpg"
-              alt="Bird-10"
-            />
+            <img src="/image/sri-lanka-scimitar-babbler4.jpg" alt="Bird-10" />
             <h3>Ceylon Scimitar-Babbler</h3>
           </a>
         </div>
         <div class="card">
           <a href="pages/Brown-capped-Babbler.html">
-            <img
-              src="/image/browncapped2.jpg"
-              alt="Bird-11"
-            />
+            <img src="/image/browncapped2.jpg" alt="Bird-11" />
             <h3>Brown-capped Babbler</h3>
           </a>
         </div>
         <div class="card">
           <a href="pages/Dusky-blue-Flycatcher.html">
-            <img
-              src="/image/Dusky-blue-flycatcher.jpg"
-              alt="Bird-12"
-            />
+            <img src="/image/Dusky-blue-flycatcher.jpg" alt="Bird-12" />
             <h3>Dusky-blue Flycatcher</h3>
           </a>
         </div>
         <div class="card">
           <a href="pages/Ceylon-Bush-Warbler.html">
-            <img
-              src="/image/Bush.jpg"
-              alt="Bird-13"
-            />
+            <img src="/image/Bush.jpg" alt="Bird-13" />
             <h3>Ceylon Bush-Warbler</h3>
           </a>
         </div>
         <div class="card">
           <a href="pages/Ceylon-Scaly-Thrush.html">
-            <img
-              src="/image/scalythrush1.jpeg"
-              alt="Bird-14"
-            />
+            <img src="/image/scalythrush1.jpeg" alt="Bird-14" />
             <h3>Ceylon Scaly Thrush</h3>
           </a>
         </div>
         <div class="card">
           <a href="pages/Spot-winged-Ground-Thrush.html">
-            <img
-              src="/image/spotBird.jpeg"
-              alt="Bird-15"
-            />
+            <img src="/image/spotBird.jpeg" alt="Bird-15" />
             <h3>Spot-winged Ground-Thrush</h3>
           </a>
         </div>
         <div class="card">
           <a href="pages/Ceylon-Whistling-Thrush.html">
-            <img
-              src="/image/whistlling.jpeg"
-              alt="Bird-16"
-            />
+            <img src="/image/whistlling.jpeg" alt="Bird-16" />
             <h3>Ceylon Whistling Thrush</h3>
           </a>
         </div>
         <div class="card">
           <a href="pages/Yellow-eared-Bulbul.html">
-            <img
-              src="/image/yellow-eared-bulbul2.jpg"
-              alt="Bird-17"
-            />
+            <img src="/image/yellow-eared-bulbul2.jpg" alt="Bird-17" />
             <h3>Yellow eared Bulbul</h3>
           </a>
         </div>
         <div class="card">
           <a href="pages/Ceylon-Swallow.html">
-            <img
-              src="/image/Swallow.jpg"
-              alt="Bird-18"
-            />
+            <img src="/image/Swallow.jpg" alt="Bird-18" />
             <h3>Ceylon Swallow</h3>
           </a>
         </div>
         <div class="card">
           <a href="pages/Crimson-backed-Flameback.html">
-            <img
-              src="/image/crimson1.jpg"
-              alt="Bird-19"
-            />
+            <img src="/image/crimson1.jpg" alt="Bird-19" />
             <h3>Crimson backed Flameback</h3>
           </a>
         </div>
         <div class="card">
           <a href="pages/ceylon-Green-pigeon.html">
-            <img
-              src="/image/green-pigeon3.jpg"
-              alt="Bird-20"
-            />
+            <img src="/image/green-pigeon3.jpg" alt="Bird-20" />
             <h3>ceylon Green-pigeon</h3>
           </a>
         </div>
@@ -313,42 +275,42 @@
         </h2></i
       >
       <b>
-      <p>
-        Sri Lanka is home to a remarkable variety of endemic bird species, found
-        nowhere else in the world. Our mission is to educate, inspire, and raise
-        awareness about these unique birds and their conservation.
-      </p>
-      <h4>Our Vision</h4>
-      <p>
-        To promote the protection and appreciation of Sri Lanka’s endemic birds
-        by providing valuable information and resources.
-      </p>
-      <h4>What We Offer</h4>
-      <ul>
-        <li>
-          A detailed list of Sri Lanka’s endemic birds with descriptions and
-          images.
-        </li>
-        <li>
-          Information on habitats, conservation efforts, and threats they face.
-        </li>
-        <li>
-          A collection of news, articles, and events related to birdwatching and
-          conservation.
-        </li>
-      </ul>
-      <h4>Why It Matters</h4>
-      <p>
-        With increasing deforestation and habitat loss, Sri Lanka’s endemic
-        birds face numerous challenges. Understanding these species and their
-        importance is the first step toward their protection. For more
-        information, follow us on social media or reach out via email at
-        info@endemicbirds.lk. Let’s work together to preserve Sri Lanka’s
-        natural heritage!
-      </p>
-    </b>
-    <a href="/pages/about.html" class="btn">More</a>
-
+        <p>
+          Sri Lanka is home to a remarkable variety of endemic bird species,
+          found nowhere else in the world. Our mission is to educate, inspire,
+          and raise awareness about these unique birds and their conservation.
+        </p>
+        <h4>Our Vision</h4>
+        <p>
+          To promote the protection and appreciation of Sri Lanka’s endemic
+          birds by providing valuable information and resources.
+        </p>
+        <h4>What We Offer</h4>
+        <ul>
+          <li>
+            A detailed list of Sri Lanka’s endemic birds with descriptions and
+            images.
+          </li>
+          <li>
+            Information on habitats, conservation efforts, and threats they
+            face.
+          </li>
+          <li>
+            A collection of news, articles, and events related to birdwatching
+            and conservation.
+          </li>
+        </ul>
+        <h4>Why It Matters</h4>
+        <p>
+          With increasing deforestation and habitat loss, Sri Lanka’s endemic
+          birds face numerous challenges. Understanding these species and their
+          importance is the first step toward their protection. For more
+          information, follow us on social media or reach out via email at
+          info@endemicbirds.lk. Let’s work together to preserve Sri Lanka’s
+          natural heritage!
+        </p>
+      </b>
+      <a href="/pages/about.html" class="btn">More</a>
     </section>
     <br />
     <section id="Conservation">
@@ -416,7 +378,6 @@
         </b>
       </div>
       <a href="/pages/conservation.html" class="btn">More</a>
-
     </section>
     <br />
     <section id="news-articles">
@@ -482,11 +443,11 @@
         </div>
         <div class="footer-center">
           <b>
-          <h3>NATURE AHAS LTD</h3>
-          <p>First Lane,Welipitiya<br />Weligama, Sri Lanka</p>
-          <p>+94 7726 90 531</p>
-          <p>ahasnacharumee@gmail.com</p>
-        </b>
+            <h3>NATURE AHAS LTD</h3>
+            <p>First Lane,Welipitiya<br />Weligama, Sri Lanka</p>
+            <p>+94 7726 90 531</p>
+            <p>ahasnacharumee@gmail.com</p>
+          </b>
         </div>
         <div class="footer-right">
           <h3><b>Follow Us</b></h3>
@@ -494,7 +455,8 @@
             <a href="#"
               ><img src="/image/icons8-twitter-50.png" alt="twitter"
             /></a>
-            <a href="https://www.instagram.com/ahas2283/?utm_source=qr&r=nametag"
+            <a
+              href="https://www.instagram.com/ahas2283/?utm_source=qr&r=nametag"
               ><img src="/image/icons8-instagram-logo-50.png" alt="Instagram"
             /></a>
             <a href="https://www.facebook.com/share/1B1Y8NfAxD/"

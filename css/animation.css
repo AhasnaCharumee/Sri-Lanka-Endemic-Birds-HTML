@@ -1,0 +1,65 @@
+/* Fade-in from bottom */
+@keyframes bottomIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Fade-in from top */
+  @keyframes topIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Fade-in from left */
+  @keyframes leftIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Fade-in from right */
+  @keyframes rightIn {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .logo img {
+    animation: leftIn 1.2s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.3s;
+  }
+  
+  .navbar-nav {
+    animation: topIn 1.2s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.6s;
+  }
+  
+  .main-text {
+    animation: bottomIn 1.2s ease-out forwards;
+    opacity: 0;
+    animation-delay: 1s;
+  }
+    

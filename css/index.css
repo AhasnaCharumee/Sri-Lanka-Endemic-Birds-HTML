@@ -3,6 +3,10 @@ body {
   margin: 0;
   padding: 0;
   cursor: pointer;
+  background-image: url(/image/dominik-van-opdenbosch-lNeIjS1rXus-unsplash\ \(1\).jpg);
+  background-size:contain;        
+  background-repeat: no-repeat; 
+  margin-top:-10%;
 }
 header {
   position: fixed;
@@ -30,6 +34,16 @@ header::before {
   z-index: -1; 
   background-color: #000000bf;
 
+}
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: -1;
 }
 header::after {
   content: "";
@@ -93,18 +107,30 @@ h2{
 .ul-navbar-nav {
   text-align: left;
 }
+
 #introduction {
-  position: relative;
-  margin: 40px auto;
-  padding: 17px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 20%;
-  max-width: 90%;
+  background-image: url(/image/pexels-couleur-2317904.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-top: 25%;
+}
+.section-wrap {
+  background-color: rgb(255 255 255 / 13%);
+  height: 85vh;
+  width: 75%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  backdrop-filter: blur(7px);
+  padding: 50px 100px;
   overflow: hidden;
+  margin-left:7%;
+  color:white;
 }
 
-#introduction::before {
+/* #introduction::before {
   content: "";
   position: absolute;
   top: 0;
@@ -115,9 +141,7 @@ h2{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(0.8px);
-  z-index: -1; 
-}
+} */
 
 .bird{
   align-items: center;
