@@ -23,14 +23,24 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/image/ricardo-porto-1oOv4stIKB4-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   filter: blur(0.8px); 
   z-index: -1; 
-}
+  background-color: #000000bf;
 
+}
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
 h1{
   font-size: 3rem;
 }
