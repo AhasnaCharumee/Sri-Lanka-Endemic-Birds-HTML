@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ceylon Woodpigeon</title>
     <link rel="styleSheet" href="/css/style.css" />
-    <link
+    <link rel="stylesheet" href="/css/animation.css" />
+    <link rel="stylesheet" href="/css/about.css" />    <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -15,66 +16,111 @@
   </head>
   <body>
     <header>
-
-    <section id="home">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <div
-            class="collapse navbar-collapse justify-content-right"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li><a class="nav-link" href="/index.html">Home</a></li>
-                <li><a class="nav-link" href="/pages/about.html">About</a></li>
+      <section id="home">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+            <div
+              class="logo"
+              style="
+                max-width: 20%;
+                margin-left: -1%;
+                margin-top: -2%;
+                max-height: 15%;
+              "
+            >
+              <img
+                src="/image/gradient-hummingbird-logo-design.png"
+                alt="logo"
+                style="max-height: 15%; max-width: 40%; margin-top: 2%"
+              />
+            </div>
+            <div class="collapse-navbar" id="navbarNav">
+              <ul class="navbar-nav" style="margin-top: -3%; margin-left: 55%">
+                <li><a class="nav-link" href="/index.html">HOME</a></li>
+                <li><a class="nav-link" href="/pages/aboutUs.html">ABOUT</a></li>
                 <li>
-                  <a class="nav-link" href="/pages/conservation.html">Conservation</a>
+                  <a class="nav-link" href="/pages/conservation.html"
+                    >CONSERVATION</a
+                  >
                 </li>
                 <li>
-                  <a class="nav-link" href="/index.html">News & Articles</a>
+                  <a class="nav-link" href="/pages/Donate.html">DONATE</a>
                 </li>
-            </ul>
+                <li>
+                  <a class="nav-link" href="/pages/Contact.html">CONTACT</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-      <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
-      <nav class="menu-panel" id="menu-panel-id">
-        <button class="close-btn" id="btn-close">&times;</button>
-        <ul>
-          <li><a class="menu-btn" href="/index.html"> Home</a></li>
-          <li><a class="menu-btn" href="/pages/about.html">About</a></li>
-          <li><a class="menu-btn" href="/pages/conservation.html">Services</a></li>
-          <li><a class="menu-btn" href="/index.html">News & Article </a></li>
-        </ul>
-      </nav>
-      <h1>Endemic Birds in Sri Lanka</h1>
-    </section>
-  </header>
-  <script>
-    const burger = document.getElementById("burger");
-    const menuPanel = document.getElementById("menu-panel-id");
-    const closeBtn = document.getElementById("btn-close");
+        </nav>
+        <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
+        <nav class="menu-panel" id="menu-panel-id">
+          <button class="close-btn" id="btn-close">&times;</button>
+          <ul>
+    
+            <li><a class="menu-btn" href="/index.html"> HOME</a></li>
+            <li><a class="menu-btn" href="/pages/aboutUs.html">ABOUT</a></li>
+            <li>
+              <a class="menu-btn" href="/pages/conservation.html"
+                >CONSERVATION</a
+              >
+            </li>
+            <li><a class="menu-btn" href="/pages/Donate.html">DONATE </a></li>
+            <li><a class="menu-btn" href="/pages/Contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <script>
+      const burger = document.getElementById("burger");
+      const menuPanel = document.getElementById("menu-panel-id");
+      const closeBtn = document.getElementById("btn-close");
 
-    burger.addEventListener("click", () => {
-      menuPanel.classList.add("active");
-    });
+      burger.addEventListener("click", () => {
+        menuPanel.classList.add("active");
+      });
 
-    closeBtn.addEventListener("click", () => {
-      menuPanel.classList.remove("active");
-    });
-  </script>
-    <h2>
-      <i> Ceylon Wood Pigeon - ශ්‍රී ලංකා මයිල පරවියා</i>
-    </h2>
+      closeBtn.addEventListener("click", () => {
+        menuPanel.classList.remove("active");
+      });
+    </script>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+ 
+     <section id="about">
+         <div class="content-grid">
+           <div class="left-grid">
+             <h2 class="section-title" style="color: #14430e;">           <i> Ceylon Wood Pigeon - ශ්‍රී ලංකා මයිල පරවියා</i>
 
-    <img class="bird"
-      src="/image/sri-lanka-wood-pigeon02.jpg"
-      style="height: 300px; width: 400px"
-      alt="Ceylon Woodpigeon"
-    />
+             </h2>
+             <p>
+              The Ceylon Woodpigeon (Columba torringtoniae) is a large, striking pigeon endemic to the forests of Sri Lanka, primarily found in the montane and submontane regions of the island. This elusive bird is part of the Columbidae family and is a close relative of other woodpigeon species found across Asia. However, it is uniquely adapted to Sri Lanka’s highland forests, making it one of the country’s most sought-after endemic bird species. Unlike more common pigeons found in urban areas, the Ceylon Woodpigeon is a shy and secretive forest-dweller, rarely venturing into human settlements. It is usually seen alone or in small groups, foraging for food in dense forests, making it a challenging yet rewarding sight for birdwatchers.
+            </p>
+            
+           </div>
+   
+           <div class="right-grid">
+             <img             src="/image/sri-lanka-wood-pigeon02.jpg"
+             style="margin-top: -10%; margin-left: 5%;"
+             class="about-img">
+           </div>
+         </div>
+     </section>
+   
 
-    <p>
-      The Ceylon Woodpigeon (Columba torringtoniae) is a large, striking pigeon endemic to the forests of Sri Lanka, primarily found in the montane and submontane regions of the island. This elusive bird is part of the Columbidae family and is a close relative of other woodpigeon species found across Asia. However, it is uniquely adapted to Sri Lanka’s highland forests, making it one of the country’s most sought-after endemic bird species. Unlike more common pigeons found in urban areas, the Ceylon Woodpigeon is a shy and secretive forest-dweller, rarely venturing into human settlements. It is usually seen alone or in small groups, foraging for food in dense forests, making it a challenging yet rewarding sight for birdwatchers.
-    </p>
+   
     <p>
       Characterized by its large size, soft grayish plumage, and distinctive scaly patterns on its neck, the Ceylon Woodpigeon is one of the more beautiful pigeons in Sri Lanka. One of its most notable features is the white and black checkerboard-like markings on the neck, which are particularly striking when viewed in good lighting. The rest of its body is covered in a bluish-gray tone, with a purplish-maroon tinge on its wings. Its eyes are deep red, giving it a distinctive gaze that sets it apart from other pigeon species. The bird's tail is long, with a broad terminal band, adding to its graceful appearance when in flight. These unique features make it one of the most recognizable pigeons in Sri Lanka’s forests.
   </p>
@@ -93,41 +139,43 @@
 
       In conclusion, the Ceylon Woodpigeon is a fascinating and essential species within Sri Lanka’s montane forest ecosystems. Despite its declining population, conservation efforts continue to offer hope for its survival. By promoting eco-tourism, reforestation, and stricter protection laws, Sri Lanka can ensure that future generations will continue to witness the beauty of this remarkable bird. The Ceylon Woodpigeon serves as a reminder of the importance of preserving Sri Lanka’s natural environment, making it a valuable species that deserves continued conservation attention.</P>
 
-    <footer>
-      <div class="footer-container">
-        <div class="footer-left">
-          <img
-            src="/image/hd-twitter-bird-silver-metal-circles-logo-icon-png-701751694781796dz4st6huzw-removebg-preview.png"
-            alt="Nature Odyssey Logo"
-            class="logo"
-            width="100px"
-            height="100px"
-          />
-          <b><p>All copyrights reserved by Ahasna Charumee - © 2025</p></b>
-        </div>
-        <div class="footer-center">
-          <b>
-          <h3>NATURE AHAS LTD</h3>
-          <p>First Lane,Welipitiya<br />Weligama, Sri Lanka</p>
-          <p>+94 7726 90 531</p>
-          <p>ahasnacharumee@gmail.com</p>
-        </b>
-        </div>
-        <div class="footer-right">
-          <h3>Follow Us</h3>
-          <div class="social-icons">
-            <a href="#"
-              ><img src="/image/icons8-twitter-50.png" alt="twitter"
-            /></a>
-            <a href="https://www.instagram.com/ahas2283/?utm_source=qr&r=nametag"
-            ><img src="/image/icons8-instagram-logo-50.png" alt="Instagram"
-          /></a>
-          <a href="https://www.facebook.com/share/1B1Y8NfAxD/"
-          ><img src="/image/icons8-facebook-50.png" alt="facebook"
-          /></a>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-left">
+            <img
+              src="/image/gradient-hummingbird-logo-design.png"
+              alt="Nature Odyssey Logo"
+              class="logo"
+              width="100px"
+              height="100px"
+            />
+  
+            <p><b>All copyrights reserved by Ahasna Charumee - © 2025</b></p>
+          </div>
+          <div class="footer-center">
+            <b>
+              <h3 style="color: #4ee43a;">NATURE AHAS LTD</h3>
+              <p>First Lane,Welipitiya<br />Weligama, Sri Lanka</p>
+              <p>+94 7726 90 531</p>
+              <p>ahasnacharumee@gmail.com</p>
+            </b>
+          </div>
+          <div class="footer-right">
+            <h3  style="color: #4ee43a;"><b>Follow Us</b></h3>
+            <div class="social">
+              <a href="#"
+                ><img src="/image/icons8-twitter-50.png" alt="twitter"
+              /></a>
+              <a
+                href="https://www.instagram.com/ahas2283/?utm_source=qr&r=nametag"
+                ><img src="/image/icons8-instagram-logo-50.png" alt="Instagram"
+              /></a>
+              <a href="https://www.facebook.com/share/1B1Y8NfAxD/"
+              ><img src="/image/icons8-facebook-50.png" alt="facebook"
+              /></a>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
   </body>
 </html>

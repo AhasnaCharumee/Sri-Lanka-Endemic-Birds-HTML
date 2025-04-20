@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ceylon Spurfowl</title>
     <link rel="styleSheet" href="/css/style.css" />
-    <link
+    <link rel="stylesheet" href="/css/animation.css" />
+    <link rel="stylesheet" href="/css/about.css" />    <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -15,63 +16,109 @@
   </head>
   <body>
     <header>
-
-    <section id="home">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <div
-            class="collapse navbar-collapse justify-content-right"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li><a class="nav-link" href="/index.html">Home</a></li>
-              <li><a class="nav-link" href="/pages/about.html">About</a></li>
-              <li>
-                <a class="nav-link" href="/pages/conservation.html">Conservation</a>
-              </li>
-              <li>
-                <a class="nav-link" href="/index.html">News & Articles</a>
-              </li>
-            </ul>
+      <section id="home">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+            <div
+              class="logo"
+              style="
+                max-width: 20%;
+                margin-left: -1%;
+                margin-top: -2%;
+                max-height: 15%;
+              "
+            >
+              <img
+                src="/image/gradient-hummingbird-logo-design.png"
+                alt="logo"
+                style="max-height: 15%; max-width: 40%; margin-top: 2%"
+              />
+            </div>
+            <div class="collapse-navbar" id="navbarNav">
+              <ul class="navbar-nav" style="margin-top: -3%; margin-left: 55%">
+                <li><a class="nav-link" href="/index.html">HOME</a></li>
+                <li><a class="nav-link" href="/pages/aboutUs.html">ABOUT</a></li>
+                <li>
+                  <a class="nav-link" href="/pages/conservation.html"
+                    >CONSERVATION</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link" href="/pages/Donate.html">DONATE</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="/pages/Contact.html">CONTACT</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-      <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
-      <nav class="menu-panel" id="menu-panel-id">
-        <button class="close-btn" id="btn-close">&times;</button>
-        <ul>
-          <li><a class="menu-btn" href="/index.html"> Home</a></li>
-          <li><a class="menu-btn" href="/pages/about.html">About</a></li>
-          <li><a class="menu-btn" href="/pages/conservation.html">Services</a></li>
-          <li><a class="menu-btn" href="/index.html">News & Article </a></li>
-        </ul>
-      </nav>
-      <h1>Endemic Birds in Sri Lanka</h1>
-    </section>
-  </header>
-  <script>
-    const burger = document.getElementById("burger");
-    const menuPanel = document.getElementById("menu-panel-id");
-    const closeBtn = document.getElementById("btn-close");
+        </nav>
+        <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
+        <nav class="menu-panel" id="menu-panel-id">
+          <button class="close-btn" id="btn-close">&times;</button>
+          <ul>
+         
+            <li><a class="menu-btn" href="/index.html"> HOME</a></li>
+            <li><a class="menu-btn" href="/pages/aboutUs.html">ABOUT</a></li>
+            <li>
+              <a class="menu-btn" href="/pages/conservation.html"
+                >CONSERVATION</a
+              >
+            </li>
+            <li><a class="menu-btn" href="/pages/Donate.html">DONATE </a></li>
+            <li><a class="menu-btn" href="/pages/Contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <script>
+      const burger = document.getElementById("burger");
+      const menuPanel = document.getElementById("menu-panel-id");
+      const closeBtn = document.getElementById("btn-close");
 
-    burger.addEventListener("click", () => {
-      menuPanel.classList.add("active");
-    });
+      burger.addEventListener("click", () => {
+        menuPanel.classList.add("active");
+      });
 
-    closeBtn.addEventListener("click", () => {
-      menuPanel.classList.remove("active");
-    });
-  </script>
-    <h2><i> The Ceylon Spurfowl - හබන් කුකුලා</i></h2>
-    <img class="bird"
-      src="/image/spur.jpeg"
-      style="height: 300px; width: 300px"
-      alt="Ceylon Spurfowl"
-    />
-    <br>
-    <p>
-      The Ceylon Spurfowl (Galloperdix bicalcarata) is a rare and elusive bird endemic to Sri Lanka, primarily inhabiting the dense rainforests and foothills of the island. It belongs to the pheasant family (Phasianidae) and is closely related to junglefowl and other galliform species. This ground-dwelling bird is best known for its secretive nature, loud and haunting calls, and its preference for staying hidden within thick undergrowth. As one of Sri Lanka’s most enigmatic avian species, the Ceylon Spurfowl plays a crucial ecological role in forest ecosystems, particularly in seed dispersal and insect control. Measuring about 33 cm in length, the bird exhibits strong sexual dimorphism, with males displaying more vibrant plumage compared to the relatively subdued coloration of females. The male typically has a reddish face, a dark crown, and well-developed leg spurs, which it uses for defense and territorial fights, while the female has brownish plumage, allowing it to blend seamlessly into the leaf litter. This camouflage is particularly beneficial for nesting and avoiding predators. Unlike many birds that take to the skies when disturbed, the Ceylon Spurfowl is predominantly a terrestrial species, preferring to run swiftly through the undergrowth rather than fly. It is primarily found in Sri Lanka’s wet zone rainforests, such as the Sinharaja Forest Reserve, Kanneliya Forest, Kitulgala, and the Knuckles Mountain Range, thriving in thick jungle terrain where visibility is low and cover is abundant. Because of its elusive nature, it is more often heard than seen, with its calls echoing through the forests at dawn and dusk. The species is highly territorial, and males are particularly aggressive in defending their home range. The diet of the Ceylon Spurfowl is omnivorous, consisting of seeds, grains, fruits, berries, insects, worms, snails, termites, and ants, which it actively seeks out by scratching through the leaf litter. This feeding behavior plays a significant role in the decomposition process of the forest floor, contributing to soil aeration and nutrient cycling.
-    </p>
+      closeBtn.addEventListener("click", () => {
+        menuPanel.classList.remove("active");
+      });
+    </script>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+ 
+     <section id="about">
+         <div class="content-grid">
+           <div class="left-grid">
+             <h2 class="section-title" style="color: #14430e;">       <i> The Ceylon Spurfowl - හබන් කුකුලා</i>
+             </h2>
+             <p>
+              The Ceylon Spurfowl (Galloperdix bicalcarata) is a rare and elusive bird endemic to Sri Lanka, primarily inhabiting the dense rainforests and foothills of the island. It belongs to the pheasant family (Phasianidae) and is closely related to junglefowl and other galliform species. This ground-dwelling bird is best known for its secretive nature, loud and haunting calls, and its preference for staying hidden within thick undergrowth. As one of Sri Lanka’s most enigmatic avian species, the Ceylon Spurfowl plays a crucial ecological role in forest ecosystems, particularly in seed dispersal and insect control. Measuring about 33 cm in length, the bird exhibits strong sexual dimorphism, with males displaying more vibrant plumage compared to the relatively subdued coloration of females. The male typically has a reddish face, a dark crown, and well-developed leg spurs, which it uses for defense and territorial fights, while the female has brownish plumage, allowing it to blend seamlessly into the leaf litter. 
+            </p>
+            
+           </div>
+   
+           <div class="right-grid">
+             <img               src="/image/spur.jpeg"
+             style="margin-top: -10%; margin-left: 5%;"
+             class="about-img">
+           </div>
+         </div>
+     </section>
+     <p>This camouflage is particularly beneficial for nesting and avoiding predators. Unlike many birds that take to the skies when disturbed, the Ceylon Spurfowl is predominantly a terrestrial species, preferring to run swiftly through the undergrowth rather than fly. It is primarily found in Sri Lanka’s wet zone rainforests, such as the Sinharaja Forest Reserve, Kanneliya Forest, Kitulgala, and the Knuckles Mountain Range, thriving in thick jungle terrain where visibility is low and cover is abundant. Because of its elusive nature, it is more often heard than seen, with its calls echoing through the forests at dawn and dusk.</p>
+<p> The species is highly territorial, and males are particularly aggressive in defending their home range. The diet of the Ceylon Spurfowl is omnivorous, consisting of seeds, grains, fruits, berries, insects, worms, snails, termites, and ants, which it actively seeks out by scratching through the leaf litter. This feeding behavior plays a significant role in the decomposition process of the forest floor, contributing to soil aeration and nutrient cycling.</p>
     <P>
       The bird’s powerful legs and sharp claws allow it to dig into decomposing logs and uncover hidden invertebrates, making it a crucial part of the forest’s ecological balance. The species is monogamous, with pairs bonding for life and exhibiting strong parental care. The breeding season typically falls between February and May, with the female laying two to four eggs in a shallow ground nest hidden among roots, under shrubs, or within bamboo thickets. Both parents participate in incubation and later in feeding and protecting the chicks, which hatch covered in down feathers and are precocial, meaning they can walk and follow their parents soon after hatching. The young birds remain with their parents for several months, learning crucial survival skills such as foraging and predator evasion. The Ceylon Spurfowl’s vocalizations are a key feature of its behavior, with males producing a series of deep, resonant “kow-kow-kow” notes to mark territory and attract mates. These calls can travel long distances through the dense jungle, serving as an effective communication method within the species. When alarmed, the bird emits sharp, harsh calls to alert its mate or offspring of potential danger. Given its preference for primary forests and undisturbed habitats, the Ceylon Spurfowl is highly vulnerable to deforestation, habitat fragmentation, and human encroachment.
   </P>
@@ -86,34 +133,36 @@
       <div class="footer-container">
         <div class="footer-left">
           <img
-            src="/image/hd-twitter-bird-silver-metal-circles-logo-icon-png-701751694781796dz4st6huzw-removebg-preview.png"
+            src="/image/gradient-hummingbird-logo-design.png"
             alt="Nature Odyssey Logo"
             class="logo"
             width="100px"
             height="100px"
           />
-          <b><p>All copyrights reserved by Ahasna Charumee - © 2025</p></b>
+
+          <p><b>All copyrights reserved by Ahasna Charumee - © 2025</b></p>
         </div>
         <div class="footer-center">
           <b>
-          <h3>NATURE AHAS LTD</h3>
-          <p>First Lane,Welipitiya<br />Weligama, Sri Lanka</p>
-          <p>+94 7726 90 531</p>
-          <p>ahasnacharumee@gmail.com</p>
-        </b>
+            <h3 style="color: #4ee43a;">NATURE AHAS LTD</h3>
+            <p>First Lane,Welipitiya<br />Weligama, Sri Lanka</p>
+            <p>+94 7726 90 531</p>
+            <p>ahasnacharumee@gmail.com</p>
+          </b>
         </div>
         <div class="footer-right">
-          <h3>Follow Us</h3>
-          <div class="social-icons">
+          <h3  style="color: #4ee43a;"><b>Follow Us</b></h3>
+          <div class="social">
             <a href="#"
               ><img src="/image/icons8-twitter-50.png" alt="twitter"
             /></a>
-            <a href="https://www.instagram.com/ahas2283/?utm_source=qr&r=nametag"
-            ><img src="/image/icons8-instagram-logo-50.png" alt="Instagram"
-          /></a>
-          <a href="https://www.facebook.com/share/1B1Y8NfAxD/"
-          ><img src="/image/icons8-facebook-50.png" alt="facebook"
-          /></a>
+            <a
+              href="https://www.instagram.com/ahas2283/?utm_source=qr&r=nametag"
+              ><img src="/image/icons8-instagram-logo-50.png" alt="Instagram"
+            /></a>
+            <a href="https://www.facebook.com/share/1B1Y8NfAxD/"
+            ><img src="/image/icons8-facebook-50.png" alt="facebook"
+            /></a>
           </div>
         </div>
       </div>
