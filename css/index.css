@@ -42,7 +42,6 @@ body::after {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: rgba(0, 0, 0, 0.5);  */
   z-index: -1;
 }
 header::after {
@@ -157,7 +156,7 @@ h2{
 }
 .card:hover {
  background-color:#313b31;
-  box-shadow: 0 0 50px #85d628;
+ box-shadow:   10px #21b300;
 }
 .card img {
   width: 100%;
