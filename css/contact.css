@@ -1,0 +1,265 @@
+#hero {
+  background-image: url(/image/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10%;
+}
+.con-1 {
+  background-image: url(/image/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+#hero .section-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent 60%, rgb(4, 61, 42) ) ;
+  z-index: 1;
+
+}
+.section-box {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  height: 80vh;
+  width: 85%;
+  overflow: hidden;
+  margin-left: 5%;
+
+
+}
+.content-wrap {
+  padding: 20px 50px;
+
+}
+
+.hero-content h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 50px;
+  }
+  .hero-content h1 {
+    font-size: 6rem;
+    font-weight: 800;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+    margin-top: -10px;
+  }
+  .hero-content {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .con-img {
+    width: 29%;
+    margin-top: -150px;
+    animation: planetAn 120s linear infinite;
+  }
+  
+.contact-container {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(32, 186, 155, 0.1);
+  max-width: 600px;
+  max-height: 50%;
+  margin-left: 20%;
+  width: 100%;
+}
+body {
+  background-color: green !important;
+}
+.contact-container h2 {
+  text-align: center;
+  color: #006b3c;
+  margin-top: -5px;
+}
+
+.contact-container p {
+  text-align: center;
+  color: #444;
+  margin-top: -5%;
+
+}
+
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.contact-form button {
+  width: 100%;
+  background-color: #009e60;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background-color: #00794c;
+}
+/* Responsive CSS for Tablets and Mobile */
+
+/* For tablets (max-width: 992px) */
+@media (max-width: 992px) {
+/* General adjustments */
+body {
+  font-size: 16px; /* Adjust base font size */
+}
+.con-img{
+ width:250px;
+}
+.navbar-nav {
+  display: none; /* Hide navbar links */
+}
+body {
+  background-color: green !important;
+}
+#burger {
+  display: block; /* Show burger menu */
+}
+
+.menu-panel {
+  width: 100%; /* Full-width menu panel */
+}
+
+.section-box {
+  width: 90%; /* Adjust section box width */
+  height: auto; /* Allow dynamic height */
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.content-grid {
+  grid-template-columns: 1fr; /* Stack content vertically */
+  gap: 20px;
+}
+
+.hero-content h1 {
+  text-align:center;
+}
+
+.contact-container {
+  width: 90%; /* Adjust contact form width */
+  margin: 0 auto;
+}
+
+.footer-container {
+  flex-direction: column; /* Stack footer sections */
+  text-align: center;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  width: 100%; /* Full-width footer sections */
+}
+.menu-btn {
+  display: inline-block;
+  padding: 25px 100px;
+  background-color: #065208;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s ease;
+  width:150px;
+}
+}
+
+/* For mobile devices (max-width: 576px) */
+@media (max-width: 576px) {
+/* General adjustments */
+body {
+  background-color: green !important;
+}
+
+.content-wrap {
+ height:auto;
+}
+.con-img{
+ margin-top:5%;
+ width:200px;
+}
+#hero{
+margin-top:-86%;
+}
+.con-1{
+    margin-top:-85%;
+
+}
+.hero-content h1 {
+  font-size: 1.8rem; /* Adjust font size for mobile */
+  text-align:center;
+}
+
+.hero-content h3 {
+  font-size: 1rem; /* Adjust font size for mobile */
+}
+
+.contact-container {
+  width: 100%; /* Full-width contact form */
+  margin: 0 auto;
+  margin-left:-15%;
+
+  
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-size: 14px; /* Adjust input font size */
+}
+
+.contact-form button {
+  font-size: 14px; /* Adjust button font size */
+}
+
+.footer-container {
+  flex-direction: column; /* Stack footer sections */
+  text-align: center;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  width: 100%; /* Full-width footer sections */
+}
+
+.footer-left img {
+  width: 80px; /* Adjust logo size */
+}
+
+.social img {
+  width: 30px; /* Adjust social icon size */
+}
+}

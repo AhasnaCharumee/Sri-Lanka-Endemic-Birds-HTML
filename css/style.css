@@ -9,10 +9,84 @@
 }
 p{
   font-size: 20px;
-  margin-right: 10px;
-  margin-left:10px;
+  margin-right: 10%;
+  margin-left:7%;
   
  
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(0.8px); 
+  z-index: -1; 
+  background-color: #000000bf;
+
+}
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white !important; 
+  z-index: -1;
+}
+footer {
+  position: relative; 
+  text-align: center;
+  padding: 10px;
+  color: white;
+  overflow: hidden; 
+  background-color: #000000;
+}
+
+
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-left img {
+  max-width: 100px;
+}
+
+.footer-right input {
+  width: 80%;
+  padding: 8px;
+  margin: 10px 0;
 }
 h1{
  font-size: 40px;
@@ -23,23 +97,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  color: #ffffff;
-  text-align: center;
-  padding: 15px 0;
-  z-index: 1000;
-  background-image: url(/image/ricardo-porto-1oOv4stIKB4-unsplash.jpg
-  );
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  
 
-}
 h1{
   font-size: 3rem;
 }
@@ -99,11 +157,11 @@ h2{
   cursor: pointer;
   display: none;
   position: relative;
-  top: 20px;
   left:250px;
 }
 .menu-panel {
-  background-color:#035113;
+  background-image:url(/image/111044-OO8I6A-474.jpg);
+  background-repeat: no-repeat;
 
   color: white;
   height: 100%;
@@ -159,16 +217,7 @@ h2{
 #Birdi{
   margin-top: 10%;
 }
-footer {
-  text-align: center;
-  padding: 10px;
-  color: white;
-  background-image: url(/image/ricardo-porto-1oOv4stIKB4-unsplash.jpg
-  );
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+
 
 .footer-container {
   display: flex;
@@ -213,84 +262,124 @@ body {
   font-size: 16px;
 }
 
-/* Mobile Small (320px) */
-@media (min-width: 320px) {
+/* Responsive CSS for Tablets and Mobile */
+
+/* For tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  /* General adjustments */
   body {
-    font-size: 14px;
+    font-size: 16px; /* Adjust base font size */
+  }
+
+  .navbar-nav {
+    display: none; /* Hide navbar links */
+  }
+  .menu-btn {
+    display: inline-block;
+    padding: 25px 100px;
+    background-color: #065208;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s ease;
+    width:150px;
   }
   #burger {
     display: block; /* Show burger menu */
-  }
-  .navbar-nav {
-    display: none; /* Hide normal menu */
-  }
-  .menu-panel.active {
-    right: 0;
+    margin-top:-2%;
   }
 
+  .menu-panel {
+    width: 100%; /* Full-width menu panel */
+  }
+
+  .section-box {
+    width: 90%; /* Adjust section box width */
+    height: auto; /* Allow dynamic height */
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr; /* Stack content vertically */
+    gap: 20px;
+  }
+
+ 
+  .right-grid {
+    max-width:90%;
+  }
+  .footer-container {
+    flex-direction: column; /* Stack footer sections */
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    width: 100%; /* Full-width footer sections */
+  }
 }
 
-/* Mobile Medium (375px) */
-@media (min-width: 375px) {
+/* For mobile devices (max-width: 576px) */
+@media (max-width: 576px) {
+  /* General adjustments */
   body {
-    font-size: 15px;
+    font-size: 14px; /* Adjust base font size */
+  }
+  .menu-btn {
+    display: inline-block;
+    padding: 25px 0px;
+    background-color: #065208;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s ease;
+    width:150px;
+    margin-top:6%;
+  }
+  .section-box {
+    width: 95%; /* Adjust section box width for smaller screens */
+    padding: 15px;
+    margin: 15px auto;
   }
   #burger {
     display: block; /* Show burger menu */
+    margin-left: -50%;
   }
-  .navbar-nav {
-    display: none; /* Hide normal menu */
+  .content-grid {
+    grid-template-columns: 1fr; /* Stack content vertically */
+    gap: 20px;
   }
-  .menu-panel.active {
-    right: 0;
-  }
-}
 
-/* Mobile Large (425px) */
-@media (min-width: 425px) {
-  body {
-    font-size: 16px;
+  .right-grid {
+    max-width:90%;
   }
-}
 
-/* Tablet (768px) */
-@media (min-width: 768px) {
-  body {
-    font-size: 18px;
+  .footer-container {
+    flex-direction: column; /* Stack footer sections */
+    text-align: center;
   }
-  #burger {
-    display: block; /* Show burger menu */
-  }
-  .navbar-nav {
-    display: none; /* Hide normal menu */
-  }
-  .menu-panel.active {
-    right: 0;
-  }
-}
 
-/* Laptop (1024px) */
-@media (min-width: 1024px) {
-  body {
-    font-size: 20px;
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    width: 100%; /* Full-width footer sections */
   }
-  #burger {
-    display: none;
-  }
-  .navbar-nav {
-    display: flex; /* Show normal menu */
-  }
-}
 
-/* Laptop Large (1440px) */
-@media (min-width: 1440px) {
-  body {
-    font-size: 22px;
+  .footer-left img {
+    width: 80px; /* Adjust logo size */
   }
-  #burger {
-    display: none;
-  }
-  .navbar-nav {
-    display: flex; /* Show normal menu */
+
+  .social img {
+    width: 30px; /* Adjust social icon size */
   }
 }

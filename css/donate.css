@@ -1,0 +1,534 @@
+#hero {
+  background-image: url(/image/9326143.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10%;
+}
+.Don-1 {
+  background-image: url(/image/9326143.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* body {
+  background-color: green !important;
+} */
+
+.donation-box {
+  max-width: 400px; /* Limit the width */
+  margin: 20px auto; /* Center it */
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(0.8px); 
+  z-index: -1; 
+  background-color: #000000bf;
+
+}
+
+
+
+.navbar-nav {
+  margin-left: 900px;
+  text-decoration: none;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color:gold;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color:gold !important;
+}
+
+.navbar-nav .nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.ul-navbar-nav {
+  text-align: left;
+}
+#burger {
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none;
+  position: relative;
+  left:250px;
+}
+.menu-panel {
+  background-image:url(/image/111044-OO8I6A-474.jpg);
+  background-repeat: no-repeat;
+  color: white;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: right 0.5s ease-in-out;
+}
+.menu-panel ul {
+  list-style: none;
+  padding: 50px 20px;
+}
+.menu-panel ul li {
+  margin-bottom: 16px;
+}
+.menu-panel ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+.close-btn {
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.menu-panel.active {
+  right: 0;
+}
+.menu-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #1bea1b;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s ease;
+  width:150px;
+}
+
+.menu-btn:hover {
+  background-color: #ffffff;
+  color:#065208;
+}
+
+
+
+
+#hero .section-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent 60%, rgb(4, 61, 42) ) ;
+  z-index: 1;
+
+}
+.section-box {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  height: 80vh;
+  width: 85%;
+  overflow: hidden;
+  margin-left: 5%;
+
+
+}
+.content-wrap {
+  padding: 20px 50px;
+
+}
+
+.hero-content h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 50px;
+  }
+  .hero-content h1 {
+    font-size: 6rem;
+    font-weight: 800;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+    margin-top: -10px;
+  }
+  .hero-content {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .Don-img {
+    width: 39%;
+    margin-top: -150px;
+    animation: planetAn 120s linear infinite;
+  }
+
+.donation-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 420px;
+  box-shadow: 0 0 50px rgba(9, 172, 41, 0.8);
+  margin-left: 30%;
+  margin-top: 80px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #67e660;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.tab:last-child {
+  margin-right: 0;
+}
+
+.tab.active {
+  background: green;
+  color: white;
+}
+
+.subheading {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.amount-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.amount-options button {
+  background: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.amount-options button:hover {
+  background: #8cf7b3;
+}
+
+.custom-amount {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.custom-amount label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.custom-amount input {
+  width: 100px;
+  padding: 8px;
+  margin-right: 5px;
+  border: 1px solid #0caf1f;
+  border-radius: 5px;
+}
+
+.custom-amount select {
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.extra-options {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.comment-link {
+  display: block;
+  margin-top: 10px;
+  color: #60e287;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.donate-btn {
+  width: 100%;
+  background:green;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.donate-btn:hover {
+  background: greenyellow;
+}
+
+footer {
+  position: relative; 
+  text-align: center;
+  padding: 10px;
+  color: white;
+  overflow: hidden; 
+  background-color: #000000;
+}
+
+
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-left img {
+  max-width: 100px;
+}
+
+.footer-right input {
+  width: 80%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.footer-right button {
+  background: gold;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.social img {
+  width: 30px;
+  margin: 5px;
+}
+.social {
+  animation: 1.8s bottomIn ease-out forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+.social img {
+  height: 40px;
+  width: 40px;
+  font-size: 1.2rem;
+  border: 1px solid #F1F8E9;
+  border-radius: 25px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social img:hover {
+  border-color: #8BC34A;
+  box-shadow: 0 0 25px #8BC34A;
+  text-shadow: 0 0 25px #8BC34A;
+  transform: rotate(360deg);
+  color: #8BC34A;
+}
+
+
+/* For tablets (max-width: 992px) */
+@media (max-width: 992px) {
+
+/* General adjustments */
+body {
+  font-size: 16px; /* Adjust base font size */
+}
+.navbar-nav {
+  display: none; /* Hide navbar links */
+}
+
+#burger {
+  display: block; /* Show burger menu */
+}
+
+.menu-panel {
+  width: 100%; /* Full-width menu panel */
+}
+
+.section-box {
+  width: 90%; /* Adjust section box width */
+  height: auto; /* Allow dynamic height */
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.content-grid {
+  grid-template-columns: 1fr; /* Stack content vertically */
+  gap: 20px;
+}
+.Don-img{
+  margin-top:0.0%;
+}
+
+
+
+.donation-box {
+  margin: 20px auto;
+}
+
+.footer-container {
+  flex-direction: column; /* Stack footer sections */
+  text-align: center;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  width: 100%; /* Full-width footer sections */
+}
+.menu-btn {
+  display: inline-block;
+  padding: 25px 100px;
+  background-color: #065208;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s ease;
+  width:150px;
+}
+}
+
+/* For mobile devices (max-width: 576px) */
+@media (max-width: 576px) {
+/* General adjustments */
+body {
+  font-size: 12.5px; /* Adjust base font size */
+}
+.Don-img{
+  margin-top:-2%;
+ width:250px;
+}
+.section-box {
+  width: 95%; /* Adjust section box width for smaller screens */
+  padding: 15px;
+  margin: 1px auto;
+}
+
+.hero-content h1 {
+  font-size: 2.6rem; /* Adjust font size for mobile */
+}
+
+.hero-content h3 {
+  font-size: 1.5rem; /* Adjust font size for mobile */
+}
+
+.donation-box {
+  margin: 20px auto;
+  max-width:80%;
+}
+
+.amount-options {
+  grid-template-columns: 1fr; /* Stack donation options vertically */
+}
+
+.footer-container {
+  flex-direction: column; /* Stack footer sections */
+  text-align: center;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  width: 100%; /* Full-width footer sections */
+}
+
+.footer-left img {
+  width: 80px; /* Adjust logo size */
+}
+
+.social img {
+  width: 30px; /* Adjust social icon size */
+}
+.menu-btn {
+  display: inline-block;
+  padding: 25px 0px;
+  background-color: #065208;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s ease;
+  width:150px;
+  margin-top:6%;
+}
+}

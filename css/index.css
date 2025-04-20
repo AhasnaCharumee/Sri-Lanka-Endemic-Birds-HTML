@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   cursor: pointer;
-  background-image: url(/image/dominik-van-opdenbosch-lNeIjS1rXus-unsplash\ \(1\).jpg);
+  background-image: url(/image/closeup-shot-two-bee-eaters-perched-tree-branch.jpg);
   background-size:contain;        
   background-repeat: no-repeat; 
   margin-top:-10%;
@@ -42,7 +42,7 @@ body::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); 
+  /* background: rgba(0, 0, 0, 0.5);  */
   z-index: -1;
 }
 header::after {
@@ -130,18 +130,6 @@ h2{
   color:white;
 }
 
-/* #introduction::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(/image/bee-eaters-with-multicolored-feathers-sitting-tree-branch.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
 
 .bird{
   align-items: center;
@@ -227,63 +215,6 @@ h2{
   margin-bottom: 10px;
 }
 
-/* #Conservation {
-  position: relative; 
-  
-  overflow: hidden; 
-}
-
-#Conservation::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(/image/pexels-jvdm-1543417.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: blur(0.8px); 
-  z-index: -1; 
-}
-
-
-#Conservation h2 {
-  color: #15660b;
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-#Conservation .content {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #333;
-}
-
-#Conservation .section-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #065208;
-  margin-top: 20px;
-  text-decoration: underline;
-}
-
-#Conservation ul {
-  list-style-type: disc;
-  margin-left: 40px;
-  font-size: 1rem;
-}
-
-#Conservation ul li {
-  margin-bottom: 10px;
-}
-
-#Conservation ul .important {
-  font-weight: bold;
-  color: #d9534f;
-} */
 .news-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -412,12 +343,12 @@ footer {
   font-size: 1.2rem;
   cursor: pointer;
   display: none;
-  left:250px;
   position: relative;
+  left:250px;
 }
 .menu-panel {
-  background-color:#035113;
-
+  background-image:url(/image/111044-OO8I6A-474.jpg);
+  background-repeat: no-repeat;
   color: white;
   height: 100%;
   width: 250px;
@@ -438,10 +369,22 @@ footer {
   color: white;
   font-size: 1.2rem;
 }
+.close-btn {
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.menu-panel.active {
+  right: 0;
+}
 .menu-btn {
   display: inline-block;
   padding: 12px 20px;
-  background-color: #1bea1b;
+  background-color: #065208;
   color: white;
   border: none;
   border-radius: 20px;
@@ -456,15 +399,6 @@ footer {
 .menu-btn:hover {
   background-color: #ffffff;
   color:#065208;
-}
-.close-btn {
-  background-color: transparent;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-  position: absolute;
-  top: 10px;
-  right: 20px;
 }
 .cons-container {
   display: grid;
@@ -494,153 +428,126 @@ footer {
     border-radius:5%;
 
 }
+/* Responsive CSS for Mobile and Tablet */
+
+/* For tablets (max-width: 992px) */
 @media (max-width: 992px) {
-  
-  .hamburger-menu {
-    display: flex;
+  .navbar-nav {
+    display: none; /* Hide navbar links */
   }
-  .links ul {
-    display: none;
+
+  #burger {
+    display: block; /* Show burger menu */
+    left:40%;
   }
-  h4 {
-    font-size: 1.2rem;
+
+  .menu-panel {
+    width: 100%; /* Full-width menu panel */
   }
-  .heading {
-    font-size: 1rem;
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    
   }
-  p {
-    font-size: 0.9rem;
+
+  .news-container {
+    grid-template-columns: repeat(1, 1fr); /* 2 news items per row */
+margin-left:20%;
   }
-  .card {
-    flex-direction: column;
-    align-items: center;
+
+  .footer-container {
+    flex-direction: column; /* Stack footer sections */
     text-align: center;
   }
-  .card img {
-    width: 80%;
+  .section-wrap{
+  height:auto;
+  margin-left:-1%;
+  max-width:80%;
+}
+  #introduction{
+    height:auto;
+    
+  }
+  .menu-btn {
+    display: inline-block;
+    padding: 25px 100px;
+    background-color: #065208;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s ease;
+    width:150px;
   }
 }
 
-@media (max-width: 768px) {
-  .team-table td {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-
-  .team-table img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .team-table h3 {
-    font-size: 1.2rem;
-  }
-
-  .team-table h4 {
-    font-size: 1rem;
-  }
-
-  
-  .team-table td {
-    padding: 15px;
-  }
-
-  #About-us, #Conservation {
-    padding: 15px;
-    margin: 20px auto;
-    width: 90%; 
-  }
-
-  #About-us h2, #Conservation h2 {
-    font-size: 1.5rem;
-  }
-
-  #About-us p, #Conservation p {
-    font-size: 0.9rem;
-  }
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-left, .footer-center, .footer-right {
-    padding: 10px;
-    width: 100%;
-  }
-
-  .footer-right input {
-    width: 90%;
-  }
-  .grid {
-    grid-template-columns: 1fr;
-  }
+/* For mobile devices (max-width: 576px) */
+@media (max-width: 576px) {
   .card-container {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr; /* 1 card per row */
   }
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .menu-btn {
+    display: inline-block;
+    padding: 25px 0px;
+    background-color: #065208;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
     text-align: center;
-    width: 100%;
-  }
-  .left-content,
-  .right-content {
-    padding: 0.4rem;
-  }
-  .card img {
-    width: 100%;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-  p {
-    font-size: 0.8rem;
+    transition: 0.3s ease;
+    width:150px;
+    margin-top:6%;
   }
   .news-container {
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
+    grid-template-columns: 1fr; /* 1 news item per row */
+    margin-left:-1%;
   }
-  .news {
-    width: 50%;
-  }
-  .cons-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-}
 
-@media (max-width: 576px) {
-  #burger {
-    display: block;
+  .menu-panel ul {
+    padding: 20px; /* Adjust padding for smaller screens */
   }
-  .navigation {
-    display: none;
+
+  .menu-panel ul li {
+    margin-bottom: 10px; /* Reduce spacing between menu items */
   }
-  .logo-container > h3 {
-    display: none;
+
+  .menu-btn {
+    width: 100%; /* Full-width buttons */
   }
-  .menu-panel.active {
-    right: 0;
+
+  .footer-container {
+    flex-direction: column; /* Stack footer sections */
+    text-align: center;
   }
-  .card {
-    width: 100%;
-    padding: 0.5rem;
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    width: 100%; /* Full-width footer sections */
   }
-  .card img {
-    width: 100%;
-    border-radius: 10px;
+
+  h1, h2, h3, h4 {
+    font-size: 1.2rem; /* Adjust font sizes */
   }
-  h4 {
-    font-size: 0.9rem;
-  }
+
   p {
-    font-size: 0.75rem;
+    font-size: 0.9rem; /* Smaller font size for paragraphs */
   }
-  .cons-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+
+.section-wrap{
+  height:auto;
+  margin-left:-3%;
+  max-width:50%;
+}
+  #introduction{
+    height:auto;
+    
   }
+
 }
