@@ -439,35 +439,33 @@ footer {
     border-radius:5%;
 
 }
-/* Responsive CSS for Mobile and Tablet */
 
-/* For tablets (max-width: 992px) */
 @media (max-width: 992px) {
   .navbar-nav {
-    display: none; /* Hide navbar links */
+    display: none; 
   }
 
   #burger {
-    display: block; /* Show burger menu */
+    display: block;
     left:40%;
   }
 
   .menu-panel {
-    width: 100%; /* Full-width menu panel */
+    width: 100%; 
   }
 
   .card-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    grid-template-columns: repeat(2, 1fr); 
     
   }
 
   .news-container {
-    grid-template-columns: repeat(1, 1fr); /* 2 news items per row */
+    grid-template-columns: repeat(1, 1fr); 
 margin-left:20%;
   }
 
   .footer-container {
-    flex-direction: column; /* Stack footer sections */
+    flex-direction: column; 
     text-align: center;
   }
   .section-wrap{
@@ -495,10 +493,10 @@ margin-left:20%;
   }
 }
 
-/* For mobile devices (max-width: 576px) */
+
 @media (max-width: 576px) {
   .card-container {
-    grid-template-columns: 1fr; /* 1 card per row */
+    grid-template-columns: 1fr; 
   }
   .menu-btn {
     display: inline-block;
@@ -516,39 +514,39 @@ margin-left:20%;
     margin-top:6%;
   }
   .news-container {
-    grid-template-columns: 1fr; /* 1 news item per row */
+    grid-template-columns: 1fr; 
     margin-left:-1%;
   }
 
   .menu-panel ul {
-    padding: 20px; /* Adjust padding for smaller screens */
+    padding: 20px; 
   }
 
   .menu-panel ul li {
-    margin-bottom: 10px; /* Reduce spacing between menu items */
+    margin-bottom: 10px; 
   }
 
   .menu-btn {
-    width: 100%; /* Full-width buttons */
+    width: 100%; 
   }
 
   .footer-container {
-    flex-direction: column; /* Stack footer sections */
+    flex-direction: column; 
     text-align: center;
   }
 
   .footer-left,
   .footer-center,
   .footer-right {
-    width: 100%; /* Full-width footer sections */
+    width: 100%; 
   }
 
   h1, h2, h3, h4 {
-    font-size: 1.2rem; /* Adjust font sizes */
+    font-size: 1.2rem; 
   }
 
   p {
-    font-size: 0.9rem; /* Smaller font size for paragraphs */
+    font-size: 0.9rem; 
   }
 
 .section-wrap{

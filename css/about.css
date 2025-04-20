@@ -458,16 +458,14 @@ footer {
   background-color: #ffffff;
   color:#065208;
 }
-/* Responsive CSS for Tablets and Mobile */
 
-/* For tablets (max-width: 992px) */
 @media (max-width: 992px) {
   .navbar-nav {
-    display: none; /* Hide navbar links */
+    display: none;
   }
 
   #burger {
-    display: block; /* Show burger menu */
+    display: block; 
   }
 .section-box{
   height:auto;
@@ -477,34 +475,34 @@ footer {
       height:auto;
   }
   .menu-panel {
-    width: 100%; /* Full-width menu panel */
+    width: 100%; 
   }
 
   .section-box {
-    width: 90%; /* Adjust section box width */
-    height: auto; /* Allow dynamic height */
+    width: 90%; 
+    height: auto; 
     padding: 20px;
   }
 
   .content-grid {
-    grid-template-columns: 1fr; /* Stack content vertically */
+    grid-template-columns: 1fr; 
     padding: 10px;
   }
 
   .about-img {
-    width: 100%; /* Full-width images */
+    width: 100%; 
     margin-bottom: 20px;
   }
 
   .footer-container {
-    flex-direction: column; /* Stack footer sections */
+    flex-direction: column; 
     text-align: center;
   }
 
   .footer-left,
   .footer-center,
   .footer-right {
-    width: 100%; /* Full-width footer sections */
+    width: 100%; 
   }
   .menu-btn {
     display: inline-block;
@@ -522,54 +520,52 @@ footer {
   }
 }
 
-/* For mobile devices (max-width: 576px) */
 @media (max-width: 576px) {
   .section-box{
   height:auto;
   margin-top:85%;
 }
   .content-grid {
-    grid-template-columns: 1fr; /* Stack content vertically */
+    grid-template-columns: 1fr; 
     gap: 20px;
   }
 .section-title{
   font-size:40px;
 }
   h1, h2, h3, h4 {
-    font-size: 1.1rem; /* Adjust font sizes */
+    font-size: 1.1rem;
     margin-left:-1%;
   }
 
   p {
-    font-size: 0.9rem; /* Smaller font size for paragraphs */
+    font-size: 0.9rem;
   }
 
   .menu-panel ul {
-    padding: 20px; /* Adjust padding for smaller screens */
+    padding: 20px;
   }
 
   .menu-panel ul li {
-    margin-bottom: 10px; /* Reduce spacing between menu items */
+    margin-bottom: 10px;
   }
-
   .menu-btn {
-    width: 100%; /* Full-width buttons */
+    width: 100%; 
   }
 
   .about-img {
-    width: 100%; /* Full-width images */
+    width: 100%; 
     margin-bottom: 15px;
   }
 
   .footer-container {
-    flex-direction: column; /* Stack footer sections */
+    flex-direction: column;
     text-align: center;
   }
 
   .footer-left,
   .footer-center,
   .footer-right {
-    width: 100%; /* Full-width footer sections */
+    width: 100%;
   }
   .menu-btn {
     display: inline-block;

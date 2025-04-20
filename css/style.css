@@ -257,22 +257,18 @@ h2{
   width: 30px;
   margin: 5px;
 }
-/* Default styles (Mobile First Approach) */
 body {
   font-size: 16px;
 }
 
-/* Responsive CSS for Tablets and Mobile */
 
-/* For tablets (max-width: 992px) */
 @media (max-width: 992px) {
-  /* General adjustments */
   body {
-    font-size: 16px; /* Adjust base font size */
+    font-size: 16px; 
   }
 
   .navbar-nav {
-    display: none; /* Hide navbar links */
+    display: none; 
   }
   .menu-btn {
     display: inline-block;
@@ -289,23 +285,23 @@ body {
     width:150px;
   }
   #burger {
-    display: block; /* Show burger menu */
+    display: block; 
     margin-top:-2%;
   }
 
   .menu-panel {
-    width: 100%; /* Full-width menu panel */
+    width: 100%; 
   }
 
   .section-box {
-    width: 90%; /* Adjust section box width */
-    height: auto; /* Allow dynamic height */
+    width: 90%; 
+    height: auto; 
     padding: 20px;
     margin: 20px auto;
   }
 
   .content-grid {
-    grid-template-columns: 1fr; /* Stack content vertically */
+    grid-template-columns: 1fr; 
     gap: 20px;
   }
 
@@ -314,22 +310,20 @@ body {
     max-width:90%;
   }
   .footer-container {
-    flex-direction: column; /* Stack footer sections */
+    flex-direction: column; 
     text-align: center;
   }
 
   .footer-left,
   .footer-center,
   .footer-right {
-    width: 100%; /* Full-width footer sections */
+    width: 100%; 
   }
 }
 
-/* For mobile devices (max-width: 576px) */
 @media (max-width: 576px) {
-  /* General adjustments */
   body {
-    font-size: 14px; /* Adjust base font size */
+    font-size: 14px; 
   }
   .menu-btn {
     display: inline-block;
@@ -347,16 +341,16 @@ body {
     margin-top:6%;
   }
   .section-box {
-    width: 95%; /* Adjust section box width for smaller screens */
+    width: 95%; 
     padding: 15px;
     margin: 15px auto;
   }
   #burger {
-    display: block; /* Show burger menu */
+    display: block; 
     margin-left: -50%;
   }
   .content-grid {
-    grid-template-columns: 1fr; /* Stack content vertically */
+    grid-template-columns: 1fr; 
     gap: 20px;
   }
 
@@ -365,21 +359,21 @@ body {
   }
 
   .footer-container {
-    flex-direction: column; /* Stack footer sections */
+    flex-direction: column;
     text-align: center;
   }
 
   .footer-left,
   .footer-center,
   .footer-right {
-    width: 100%; /* Full-width footer sections */
+    width: 100%; 
   }
 
   .footer-left img {
-    width: 80px; /* Adjust logo size */
+    width: 80px; 
   }
 
   .social img {
-    width: 30px; /* Adjust social icon size */
+    width: 30px; 
   }
 }

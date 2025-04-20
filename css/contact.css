@@ -125,40 +125,37 @@ body {
 .contact-form button:hover {
   background-color: #00794c;
 }
-/* Responsive CSS for Tablets and Mobile */
 
-/* For tablets (max-width: 992px) */
 @media (max-width: 992px) {
-/* General adjustments */
 body {
-  font-size: 16px; /* Adjust base font size */
+  font-size: 16px; 
 }
 .con-img{
  width:250px;
 }
 .navbar-nav {
-  display: none; /* Hide navbar links */
+  display: none; 
 }
 body {
   background-color: green !important;
 }
 #burger {
-  display: block; /* Show burger menu */
+  display: block; 
 }
 
 .menu-panel {
-  width: 100%; /* Full-width menu panel */
+  width: 100%; 
 }
 
 .section-box {
-  width: 90%; /* Adjust section box width */
-  height: auto; /* Allow dynamic height */
+  width: 90%; 
+  height: auto; 
   padding: 20px;
   margin: 20px auto;
 }
 
 .content-grid {
-  grid-template-columns: 1fr; /* Stack content vertically */
+  grid-template-columns: 1fr; 
   gap: 20px;
 }
 
@@ -167,19 +164,19 @@ body {
 }
 
 .contact-container {
-  width: 90%; /* Adjust contact form width */
+  width: 90%; 
   margin: 0 auto;
 }
 
 .footer-container {
-  flex-direction: column; /* Stack footer sections */
+  flex-direction: column; 
   text-align: center;
 }
 
 .footer-left,
 .footer-center,
 .footer-right {
-  width: 100%; /* Full-width footer sections */
+  width: 100%; 
 }
 .menu-btn {
   display: inline-block;
@@ -197,9 +194,7 @@ body {
 }
 }
 
-/* For mobile devices (max-width: 576px) */
 @media (max-width: 576px) {
-/* General adjustments */
 body {
   background-color: green !important;
 }
@@ -219,16 +214,16 @@ margin-top:-86%;
 
 }
 .hero-content h1 {
-  font-size: 1.8rem; /* Adjust font size for mobile */
+  font-size: 1.8rem; 
   text-align:center;
 }
 
 .hero-content h3 {
-  font-size: 1rem; /* Adjust font size for mobile */
+  font-size: 1rem; 
 }
 
 .contact-container {
-  width: 100%; /* Full-width contact form */
+  width: 100%; 
   margin: 0 auto;
   margin-left:-15%;
 
@@ -237,29 +232,29 @@ margin-top:-86%;
 
 .contact-form input,
 .contact-form textarea {
-  font-size: 14px; /* Adjust input font size */
+  font-size: 14px; 
 }
 
 .contact-form button {
-  font-size: 14px; /* Adjust button font size */
+  font-size: 14px; 
 }
 
 .footer-container {
-  flex-direction: column; /* Stack footer sections */
+  flex-direction: column; 
   text-align: center;
 }
 
 .footer-left,
 .footer-center,
 .footer-right {
-  width: 100%; /* Full-width footer sections */
+  width: 100%; 
 }
 
 .footer-left img {
-  width: 80px; /* Adjust logo size */
+  width: 80px; 
 }
 
 .social img {
-  width: 30px; /* Adjust social icon size */
+  width: 30px; 
 }
 }

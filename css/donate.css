@@ -11,13 +11,10 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* body {
-  background-color: green !important;
-} */
 
 .donation-box {
-  max-width: 400px; /* Limit the width */
-  margin: 20px auto; /* Center it */
+  max-width: 400px; 
+  margin: 20px auto; 
 }
 header {
   position: fixed;
@@ -399,34 +396,32 @@ footer {
 }
 
 
-/* For tablets (max-width: 992px) */
 @media (max-width: 992px) {
 
-/* General adjustments */
 body {
-  font-size: 16px; /* Adjust base font size */
+  font-size: 16px; 
 }
 .navbar-nav {
-  display: none; /* Hide navbar links */
+  display: none; 
 }
 
 #burger {
-  display: block; /* Show burger menu */
+  display: block; 
 }
 
 .menu-panel {
-  width: 100%; /* Full-width menu panel */
+  width: 100%; 
 }
 
 .section-box {
-  width: 90%; /* Adjust section box width */
-  height: auto; /* Allow dynamic height */
+  width: 90%; 
+  height: auto; 
   padding: 20px;
   margin: 20px auto;
 }
 
 .content-grid {
-  grid-template-columns: 1fr; /* Stack content vertically */
+  grid-template-columns: 1fr; 
   gap: 20px;
 }
 .Don-img{
@@ -440,14 +435,14 @@ body {
 }
 
 .footer-container {
-  flex-direction: column; /* Stack footer sections */
+  flex-direction: column; 
   text-align: center;
 }
 
 .footer-left,
 .footer-center,
 .footer-right {
-  width: 100%; /* Full-width footer sections */
+  width: 100%; 
 }
 .menu-btn {
   display: inline-block;
@@ -465,28 +460,26 @@ body {
 }
 }
 
-/* For mobile devices (max-width: 576px) */
 @media (max-width: 576px) {
-/* General adjustments */
 body {
-  font-size: 12.5px; /* Adjust base font size */
+  font-size: 12.5px; 
 }
 .Don-img{
   margin-top:-2%;
  width:250px;
 }
 .section-box {
-  width: 95%; /* Adjust section box width for smaller screens */
+  width: 95%; 
   padding: 15px;
   margin: 1px auto;
 }
 
 .hero-content h1 {
-  font-size: 2.6rem; /* Adjust font size for mobile */
+  font-size: 2.6rem; 
 }
 
 .hero-content h3 {
-  font-size: 1.5rem; /* Adjust font size for mobile */
+  font-size: 1.5rem; 
 }
 
 .donation-box {
@@ -495,26 +488,26 @@ body {
 }
 
 .amount-options {
-  grid-template-columns: 1fr; /* Stack donation options vertically */
+  grid-template-columns: 1fr; 
 }
 
 .footer-container {
-  flex-direction: column; /* Stack footer sections */
+  flex-direction: column; 
   text-align: center;
 }
 
 .footer-left,
 .footer-center,
 .footer-right {
-  width: 100%; /* Full-width footer sections */
+  width: 100%; 
 }
 
 .footer-left img {
-  width: 80px; /* Adjust logo size */
+  width: 80px; 
 }
 
 .social img {
-  width: 30px; /* Adjust social icon size */
+  width: 30px; 
 }
 .menu-btn {
   display: inline-block;

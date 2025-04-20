@@ -6,13 +6,7 @@ body {
   background-color: rgb(0, 131, 11);
 }
 
-/* section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-} */
+
 #hero {
   background-image: url(/image/7600466.jpg);
   background-position: center;
@@ -126,7 +120,6 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 50px;
   }
-/* Project */
 .project-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -226,64 +219,61 @@ body {
     background-color: #ffffff;
     color:#065208;
   }
-/* Responsive CSS for Tablets and Mobile */
 
-/* For tablets (max-width: 992px) */
 @media (max-width: 992px) {
-  /* General adjustments */
   body {
-    font-size: 16px; /* Adjust base font size */
+    font-size: 16px; 
   }
 
   .navbar-nav {
-    display: none; /* Hide navbar links */
+    display: none; 
   }
 
   #burger {
-    display: block; /* Show burger menu */
+    display: block; 
   }
 
   .menu-panel {
-    width: 100%; /* Full-width menu panel */
+    width: 100%; 
   }
 
   .section-box {
-    width: 90%; /* Adjust section box width */
-    height: auto; /* Allow dynamic height */
+    width: 90%; 
+    height: auto; 
     padding: 20px;
     margin: 20px auto;
   }
 
   .content-grid {
-    grid-template-columns: 1fr; /* Stack content vertically */
+    grid-template-columns: 1fr; 
     gap: 20px;
   }
 
   .about-img {
-    width: 100%; /* Full-width images */
+    width: 100%; 
     margin-bottom: 20px;
   }
 
   .project-grid {
-    grid-template-columns: 1fr; /* One card per row */
-    gap: 20px; /* Add spacing between cards */
-    justify-items: center; /* Center the cards horizontally */
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+    justify-items: center; 
   }
 
   .card {
-    width: 90%; /* Adjust card width for tablets */
-    margin: 0 auto; /* Center the card */
+    width: 90%; 
+    margin: 0 auto; 
   }
 
   .footer-container {
-    flex-direction: column; /* Stack footer sections */
+    flex-direction: column;
     text-align: center;
   }
 
   .footer-left,
   .footer-center,
   .footer-right {
-    width: 100%; /* Full-width footer sections */
+    width: 100%; 
   }
   .crack-img{
     margin-left:14%;
@@ -325,77 +315,75 @@ body {
 }
 
 
-/* For mobile devices (max-width: 576px) */
 @media (max-width: 576px) {
-  /* General adjustments */
   body {
-    font-size: 12.5px; /* Adjust base font size */
+    font-size: 12.5px; 
   }
 
   .section-box {
-    width: 90%; /* Adjust section box width for smaller screens */
+    width: 90%; 
     padding: 15px;
     margin: 1px auto;
     margin-top:-5%;
   }
   #burger {
-    display: block; /* Show burger menu */
+    display: block; 
     margin-left: -50%;
   }
 
   .content-grid {
-    grid-template-columns: 1fr; /* Stack content vertically */
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 
   .about-img {
-    width: 100%; /* Full-width images */
+    width: 100%; 
     margin-bottom: 15px;
   }
 
   .project-grid {
-    grid-template-columns: 1fr; /* One card per row */
-    gap: 15px; /* Reduce spacing for smaller screens */
-    justify-items: center; /* Center the cards horizontally */
+    grid-template-columns: 1fr;
+    gap: 15px; 
+    justify-items: center;
   }
 
   .card {
-    width: 95%; /* Adjust card width for mobile */
-    margin: 0 auto; /* Center the card */
+    width: 95%; 
+    margin: 0 auto; 
   }
 
   .card img {
-    width: 100%; /* Ensure images fit within the card */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto; 
   }
 
   .card-title {
-    font-size: 1.2rem; /* Adjust font size for smaller screens */
-    text-align: center; /* Center align the title */
+    font-size: 1.2rem; 
+    text-align: center; 
   }
 
   .card p {
-    font-size: 0.9rem; /* Adjust paragraph font size */
-    text-align: center; /* Center align the text */
+    font-size: 0.9rem; 
+    text-align: center; 
   }
 
   .footer-container {
-    flex-direction: column; /* Stack footer sections */
+    flex-direction: column;
     text-align: center;
   }
 
   .footer-left,
   .footer-center,
   .footer-right {
-    width: 100%; /* Full-width footer sections */
+    width: 100%; 
   }
 
   .footer-left img {
-    width: 80px; /* Adjust logo size */
+    width: 80px; 
   }
 
   .social img {
-    width: 30px; /* Adjust social icon size */
+    width: 30px; 
   }
   .crack-img{
     max-width:100%;
